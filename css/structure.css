@@ -1,0 +1,179 @@
+:root {
+    
+    
+    
+    
+    
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+        overflow-x: hidden;
+}
+
+
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+}
+
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 8vw;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+header .logo
+{  display: block;
+
+
+    width: 156px;
+    height: 50px;
+    cursor: pointer;
+    background-image: /* version chica */;
+    background-repeat: no-repeat;
+}
+
+
+
+header.nav-scrolled .logo {
+    background-image:  /* version chica con contraste */;
+}
+
+body.active header .logo {
+    display: none;
+}
+
+.skip-nav-link {
+    display: none;
+}
+
+
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(/img/buttons/menu.webp);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav-scrolled .toggle {
+     background-image: url(/img/buttons/menu-dark.webp); 
+}
+.toggle.active
+{
+  background: url(/img/buttons/close.webp);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+    right:1.4em;
+    transition: right 0.5s;
+}
+
+.nav-scrolled .toggle.active {
+    background-image: url(/img/buttons/close-dark.webp);
+}
+
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    z-index: 99999;
+
+    transition: 0.25s;
+
+}
+
+body.active .menu {
+      right: 0;
+
+}
+
+.menu ul
+{
+  position: relative;
+    text-align: right;
+
+
+}
+
+.menu ul li
+{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+
+.menu ul li:hover,
+.menu ul li:focus-within{
+    border-bottom: 5px  solid ;
+    padding-bottom: 0px;
+
+}
+
+
+.menu ul li a
+{
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 24px;
+    padding: 0.5em;
+    font-weight: 200;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+.lightsOff {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body.active .lightsOff {
+
+    display: flex;
+    
+}

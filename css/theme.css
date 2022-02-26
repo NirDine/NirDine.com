@@ -1,0 +1,87 @@
+:root {
+    --accent: #FF5959;
+    --primary: #CDDEFF;
+    --contrast: #676FA3;
+    --mainBG: #EEF2FF;
+
+
+}
+
+*
+{
+
+ font-family: 'Poppins', sans-serif;
+}
+
+
+::selection {
+    background: #00000096;
+    color: var(--mainBG);
+
+}
+
+body {
+
+    background-color: var(--contrast);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.showcase .highlight {
+
+    text-shadow: 1px 1px 1px black;
+}
+
+.skip-nav-link {
+    background: var(--mainBG);
+    color: var(--accent);
+    
+    
+}
+.nav-scrolled {
+  color: #333;
+  background-color: var(--mainBG);
+  box-shadow: 0 3px 20px rgb(0 0 0 / 20%);
+    
+}
+
+
+.menu {
+    background: var(--mainBG);
+}
+
+
+.menu ul li:hover,
+.menu ul li:focus-within
+{
+
+border-right-color: var(--accent);
+color: var(--accent);
+
+
+}
+
+.menu ul li a
+{
+    color: var(--menuBG);
+    
+}
+
+
+.lightsOff {
+    background-color: #000000a8;
+    backdrop-filter: blur(1rem);
+}
+
+
+
+
+
+

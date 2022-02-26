@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+        <title>The Web Design You Need</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/structure.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/desktop-720.css" media="screen and (min-device-width: 1280px)">
+        <link rel="stylesheet" href="css/desktop-1080.css" media="screen and (min-device-width: 1919px)">
+
+
+    </head>
+    <body>
+    </body>
+</html>
+
+
+<header>
+                <a href="/" class="logo"></a>
+                <a href="#showcase" class="skip-nav-link" id="skip">Skip Navigation</a>
+                <div class="toggle"></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" onclick="escape()" style="--indexCount: 0;" id="navHome">Home</a></li>
+                        <li><a href="#services" onclick="escape()" style="--indexCount: 1;" id="navApp">Score</a></li>
+                        <li><a href="#about" onclick="escape()" style="--indexCount: 2;" id="navAbout">About Us</a></li>
+                        <li><a href="#team" onclick="escape()" style="--indexCount: 3;" id="navTeam">Our Team</a></li>
+                        <li><a href="#contact" onclick="escape()" style="--indexCount: 5;" id="navContact">Contact us</a></li>
+                    </ul>
+                </nav>
+            
+<!--
+
+El script de cambio de lenguaje tiene que encontrarse abajo del checkbox, pero mientras más abajo esté, más tarde ocurre el cambio. Para evitar que el usuario note el cambio, lo estoy ubicando lo más arriba posible. 
+
+-->
+            <script src="js/langSwitcher.js" type="text/javascript"></script>
+                
+                
+            </header>
+            
+
+            <div class="lightsOff"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- MENU HANDLER -->
+        <script type="text/javascript">
+             var isOpen = new Boolean(false);
+             const menuToggle = document.querySelector('.toggle');
+             const menuChild = document.querySelector('.menu ul li a');
+             const menuLastChild = document.querySelector('.last-menu-option');
+            const menuEscape = document.querySelector('.lightsOff');
+          const showcase = document.querySelector('body');
+        
+        function escape() {
+            menuEscape.classList.remove('active');
+            menuToggle.classList.remove('active');
+            showcase.classList.remove('active');           
+        }
+        
+        function toggle () {
+            
+            menuEscape.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        }
+            
+          menuToggle.addEventListener('click', () => {
+              toggle();
+              isOpen = true;
+          })
+                
+          menuEscape.addEventListener('click', () => {
+              toggle();
+          })
+          menuChild.addEventListener('focus', () => {
+             if (isOpen == false) {
+                
+              escape();
+                
+            }
+
+          })
+                
+        menuLastChild.addEventListener('focusout', () => {
+            if (isOpen) {
+                
+              escape();
+                
+            
+            }
+          })
+            
+                
+
+            </script>
+            <script type="text/javascript">
+                var videoBox = document.querySelector('.videoBox');
+                var videoEscape = document.querySelector('.videoEscape');
+                var target = document.querySelector('.targetVideo');
+
+
+                function videoFocus(source) {
+
+    
+                    target.setAttribute('src', source);
+                    showcase.classList.toggle('video');
+                    videoBox.classList.toggle('active');
+                }           
+
+
+                
+
+        </script>
+<script src="js/observers.js"></script>
