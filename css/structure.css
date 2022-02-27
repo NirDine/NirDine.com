@@ -19,6 +19,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: 0.2s;
     overflow-x: hidden;
     text-rendering: optimizeSpeed;
@@ -28,6 +30,7 @@ body {
 header
 {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -44,18 +47,23 @@ header .logo
 {  display: block;
 
 
-    width: 156px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     cursor: pointer;
-    background-image: /* version chica */;
+    background-image: url(/img/marca.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+header .logo:hover,
+header .logo:focus
+{
+    background-image: url(/img/marca-accent.svg);
 }
 
 
-
-header.nav-scrolled .logo {
-    background-image:  /* version chica con contraste */;
-}
 
 body.active header .logo {
     display: none;
@@ -71,19 +79,19 @@ body.active header .logo {
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(/img/buttons/menu.webp);
+  background: url(/img/buttons/menu-dark.svg);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   cursor: pointer;
 }
 
-.nav-scrolled .toggle {
-     background-image: url(/img/buttons/menu-dark.webp); 
+.navScrolled .toggle {
+     background-image: url(/img/buttons/menu-dark.svg); 
 }
 .toggle.active
 {
-  background: url(/img/buttons/close.webp);
+  background: url(/img/buttons/close.svg);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -93,7 +101,7 @@ body.active header .logo {
 }
 
 .nav-scrolled .toggle.active {
-    background-image: url(/img/buttons/close-dark.webp);
+    background-image: url(/img/buttons/close-dark.svg);
 }
 
 
@@ -135,7 +143,7 @@ body.active .menu {
 
 .menu ul li:hover,
 .menu ul li:focus-within{
-    border-bottom: 5px  solid ;
+    border-bottom: 5px solid  ;
     padding-bottom: 0px;
 
 }
@@ -154,7 +162,18 @@ body.active .menu {
 }
 
 
+.menu ul li a img {
+    margin-top:5px;
+    height: 20px;
+    width: 20px;
+}
 
+
+.menu ul li a img {
+    margin-top:5px;
+    height: 20px;
+    width: 20px;
+}
 
 
 
@@ -175,5 +194,45 @@ body.active .menu {
 body.active .lightsOff {
 
     display: flex;
+    
+}
+
+
+
+.showcase {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+
+}
+
+.fixed {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 79%;
+    background-image: url(/img/art/bg.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.fixed img {
+    position: absolute;
+    height: 28.3em;
+    bottom: 0;
+
+
+}
+
+
+.contentWrapper {
+  height: 3000px;
+width: 100%;
     
 }

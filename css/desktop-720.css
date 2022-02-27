@@ -1,19 +1,41 @@
+:root {
+
+
+
+}
+
+
 @media (min-width: 1280px) {
     
     
     body {
         
     
-    background: blue !important;
-    height: 3000px;
+
     
     }
 
     
     /* HEADER */
     
+    header {
+        position: fixed;
+        background: var(--mainBG);
+
+        padding: 20px;
+        right: auto;
+        left: auto;
+        top: 10px;
+        width: 80%;
+        border-radius: 15px;
+
+
+        
+    }
+    
     header .logo {
-        background-image: /* versión grande */;
+        width: 15em;
+ /* versión grande del logo*/
     }
     
 
@@ -22,7 +44,7 @@
     .skip-nav-link {
         display: block;
         position: absolute;
-        top: 0px;
+        top: -10px;
         transform: translateY(-120%);
         padding: 30px;
         border-radius: 0px 0px 5px 5px;
@@ -42,6 +64,7 @@
     
     
     .menu {
+        position: relative;
         right: 0;
         width: auto;
         height: auto;
@@ -55,16 +78,45 @@
         align-items: center;
     }
     
+    .menu ul li {
+       border-right: 1px solid #0000002b;
 
+    }
+    
+        
+    .menu ul li:last-child,
+    .menu ul li.lastMenuOption {
+       border-right: 0px;
+    }
+    
+    
     .menu ul li a{
         padding: 28px 20px;
+        min-width: 130px;
+        justify-content: center;
+
+    }
+    
+    .menu ul li.search {
+        display: none;
 
     }
     
     
+
+    .contentWrapper {
+
+    width: 80%;
+    border-radius: 15px;
+    
+    }
     
     
-    
+    .navScrolled {
+        border-bottom: 1px solid var(--contrast);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
     
     
 }

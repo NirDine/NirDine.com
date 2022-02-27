@@ -3,6 +3,7 @@
     --primary: #CDDEFF;
     --contrast: #676FA3;
     --mainBG: #EEF2FF;
+    --imgBG: url('/img/bg.png');
 
 
 }
@@ -24,6 +25,8 @@ body {
 
     background-color: var(--contrast);
 
+
+
 }
 
 a {
@@ -34,10 +37,11 @@ a {
     color: var(--accent);
 }
 
-.showcase .highlight {
 
-    text-shadow: 1px 1px 1px black;
+header .logo {
+    border-color: var(--accent);
 }
+
 
 .skip-nav-link {
     background: var(--mainBG);
@@ -45,13 +49,6 @@ a {
     
     
 }
-.nav-scrolled {
-  color: #333;
-  background-color: var(--mainBG);
-  box-shadow: 0 3px 20px rgb(0 0 0 / 20%);
-    
-}
-
 
 .menu {
     background: var(--mainBG);
@@ -59,18 +56,18 @@ a {
 
 
 .menu ul li:hover,
-.menu ul li:focus-within
+.menu ul li:focus-within,
+.menu ul li a:hover,
+.menu ul li a:focus
 {
 
-border-right-color: var(--accent);
 color: var(--accent);
-
 
 }
 
 .menu ul li a
 {
-    color: var(--menuBG);
+    color: var(--contrast);
     
 }
 
@@ -81,7 +78,10 @@ color: var(--accent);
 }
 
 
+.contentWrapper {
+  background: var(--mainBG);
 
-
+    
+}
 
 

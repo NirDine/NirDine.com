@@ -16,9 +16,9 @@ const sectionOneObserver = new IntersectionObserver(function(
 ) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
+      header.classList.add("navScrolled");
     } else {
-      header.classList.remove("nav-scrolled");
+      header.classList.remove("navScrolled");
     }
   });
 },
