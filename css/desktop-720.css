@@ -35,7 +35,7 @@
     
     header .logo {
         width: 15em;
- /* versión grande del logo*/
+        background-image: url(/img/logo/marca.svg);
     }
 
 

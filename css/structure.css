@@ -50,7 +50,7 @@ header .logo
     width: 65px;
     height: 65px;
     cursor: pointer;
-    background-image: url(/img/marca.svg);
+    background-image: url(/img/logo/marca-dark.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -60,7 +60,7 @@ header .logo
 header .logo:hover,
 header .logo:focus
 {
-    background-image: url(/img/marca-accent.svg);
+    background-image: url(/img/logo/marca-accent.svg);
 }
 
 
