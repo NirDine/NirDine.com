@@ -15,21 +15,26 @@
     
     }
 
-    
+
     /* HEADER */
     
     header {
-        position: fixed;
+        position: absolute;
         background: var(--mainBG);
-
         padding: 20px;
         right: auto;
         left: auto;
-        top: 10px;
+        top: 87vh;
         width: 80%;
         border-radius: 15px;
 
 
+        
+    }
+    
+    header.navScrolled {
+        position: fixed;
+        top: 0;
         
     }
     
@@ -43,6 +48,7 @@
     
     .skip-nav-link {
         display: block;
+        left: 10%;
         position: absolute;
         top: -10px;
         transform: translateY(-120%);
