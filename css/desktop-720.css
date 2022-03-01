@@ -19,12 +19,12 @@
     /* HEADER */
     
     header {
-        position: absolute;
+        position: relative;
         background: var(--mainBG);
         padding: 20px;
         right: auto;
         left: auto;
-        top: 87vh;
+        top: auto;
         width: 80%;
         border-radius: 15px;
 
@@ -109,6 +109,13 @@
     }
     
     
+        
+    .navScrolled {
+        border-bottom: 1px solid var(--contrast);
+        border-radius: 0px;
+    }
+    
+    
 
     .contentWrapper {
 
@@ -117,11 +124,9 @@
     
     }
     
-    
-    .navScrolled {
-        border-bottom: 1px solid var(--contrast);
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
+
+    .showcase {
+            margin-bottom: -130px;
     }
     
     

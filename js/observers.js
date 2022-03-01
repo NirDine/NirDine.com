@@ -1,19 +1,14 @@
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".showcase");
-const sectionTwo = document.querySelector(".mid-section");
+
 
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
 const sectionOneOptions = {
-  rootMargin: "-35px 0px 0px 0px"
+  rootMargin: "-130px 0px 0px 0px"
 };
-
-const sectionTwoOptions = {
-  rootMargin: "-35px 0px 0px 0px"
-};
-
 
 const sectionOneObserver = new IntersectionObserver(function(
   entries,
