@@ -5,7 +5,7 @@
     --primary: #CDDEFF;
     --contrast: #676FA3;
     --mainBG: #EEF2FF;
-    --imgBG: url('/img/bg.png');
+    --dark: #333333;
 
 
 }
@@ -40,11 +40,6 @@ a {
 
 .highlight {
     color: var(--accent);
-}
-
-
-header .logo {
-    border-color: var(--accent);
 }
 
 

@@ -39,8 +39,8 @@
     }
     
     header .logo {
-        width: 15em;
-        background-image: url(/img/logo/marca.svg);
+        width: 11em;
+        stroke: var(--contrast);
     }
 
 

@@ -44,23 +44,22 @@ header
 
 
 header .logo
-{  display: block;
+{  display: flex;
+    align-content: center;
+    fill:none;
+    stroke:var(--dark);
+    stroke-miterlimit:10;
+    stroke-width:6px;
+    width: 4em;
 
-
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-    background-image: url(/img/logo/marca-dark.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 
 }
 
 header .logo:hover,
 header .logo:focus
 {
-    background-image: url(/img/logo/marca-accent.svg);
+
+    stroke: var(--accent);
 }
 
 
