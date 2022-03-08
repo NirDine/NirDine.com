@@ -161,10 +161,9 @@
 
 
     #layer0 {
-        background-image: url(/img/art/parallax/test.jpeg);
+        background-image: url(/img/art/parallax/parallax0.png);
     }
-    /*
-    
+
     #layer1 {
         background-image: url(/img/art/parallax/parallax1.png)
     }
@@ -201,7 +200,22 @@
         background-image: url(/img/art/parallax/parallax8.png)
     }
 
-    */
+
+    #layer9 {
+        background-image: url(/img/art/parallax/parallax9.png)
+    }
+
+
+    #layer10 {
+        background-image: url(/img/art/parallax/parallax10.png)
+    }
+
+
+    #layer11 {
+        background-image: url(/img/art/parallax/parallax11.png)
+    }
+
+
     
     
     #products {
@@ -220,7 +234,13 @@
 
     }
     
-    .right {    padding-right:1.5em;}
+    .right {
+        padding-right:1.5em;
+    }
+    .right.reverse { 
+        padding-right:0em;
+        padding-left:1.5em;
+    }
     
     .item .left blockquote {
 
