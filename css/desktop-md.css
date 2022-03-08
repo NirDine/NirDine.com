@@ -147,18 +147,25 @@
         margin-bottom: -15px;
     }
     
-    
     .parallaxLayer {
-    height: 100vh;
-    background-position: bottom center;
-    background-size: auto 1080px;
-    background-repeat: repeat-x;
-    width: 100%;
-    /* position: absolute;  */
-    position: fixed;
-    
+
+    background-size: auto cover;
+
+        
     }
 
+    /* 
+    
+    
+.parallaxLayer {
+    height: 100vh;
+    background-position: bottom center;
+    background-size: auto cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: fixed;
+
+}
 
     #layer0 {
         background-image: url(/img/art/parallax/parallax0.png);
@@ -215,8 +222,10 @@
         background-image: url(/img/art/parallax/parallax11.png)
     }
 
-
     
+    
+    */
+
     
     #products {
             border-radius:  var(--bradius);
