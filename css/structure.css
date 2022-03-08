@@ -10,7 +10,7 @@
 
 html {
     scroll-behavior: smooth;
-        overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -231,12 +231,11 @@ main {
 }
 
 
-#products {
-
-    width: 100%;
+.item {    
+    margin-bottom: 13px;
     padding: 1.5em 1em;
+    border-radius: var(--bradius);
 }
-
 
 .holder {
     display: flex;
