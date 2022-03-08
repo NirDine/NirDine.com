@@ -309,7 +309,7 @@ main {
   position: relative;
   display: inline-flex;
   width: 147.5px;
-  height: 55px;
+  height: 56px;
   margin: 5px 5px 0px 5px;
   perspective: 1000px;
 }
@@ -326,7 +326,7 @@ main {
 .button a:after{
   position: absolute;
   content: attr(data-content);
-  height: 55px;
+  height: 56px;
   width: 147.5px;
   display: flex;
   align-items: center;
