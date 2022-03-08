@@ -26,9 +26,10 @@
 
 }
 
-body {
+body, main {
 
-    background-color: var(--contrast);
+    background-color:var(--contrast);
+    color: var(--dark);
 
 
 
@@ -68,7 +69,7 @@ a {
 
 .menu ul li:hover,
 .menu ul li:focus-within,
-.menu ul li a:hover,
+.menu ul li:hover a,
 .menu ul li a:focus
 {
 
@@ -83,9 +84,67 @@ color: var(--accent);
 }
 
 
-.contentWrapper {
-  background: var(--mainBG);
+.showcase {
+    background-color: #ffaf1b;
+}
 
+
+.contentWrapper {
+
+
+    
+}
+
+#products {
+    background: var(--mainBG);
+}
+
+#products p {
+
+}
+
+    .item .left blockquote {
+
+    background: var(--primary);
+    
+    }
+
+    .item .left blockquote span {
+
+        color: var(--accent);
+}
+
+    
+    .item .left blockquote span.author {
+            color: var(--dark);
+}
+
+    
+}
+
+.button a:before,
+.button a:after{
+
+}
+
+.button a:before {
+  color: var(--contrast);
+  background: var(--mainBG);
+ border-color:var(--primary);
+}
+
+.button a:after {
+  color: var(--accent);
+  background: var(--mainBG);
+  border-color:var(--primary);
+    
+}
+
+
+.button:nth-child(2) a:after {
+  color: var(--mainBG);
+  background: var(--accent);
+  border-color:var(--accent);
     
 }
 

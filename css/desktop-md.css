@@ -1,0 +1,232 @@
+:root {
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+    
+    
+    body {
+        
+    
+
+    
+    }
+    
+    img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+
+    /* HEADER */
+    
+    header {
+        position: relative;
+        background: var(--mainBG);
+        padding: 20px;
+        right: auto;
+        left: auto;
+        top: auto;
+        width: 80%;
+        border-radius: var(--bradius);
+
+
+        
+    }
+    
+    header.navScrolled {
+        position: fixed;
+        top: 15px;
+        
+    }
+    
+    header .logo {
+        width: 11em;
+        stroke: var(--contrast);
+    }
+
+
+    
+    
+    .skip-nav-link {
+        display: block;
+        left: 10%;
+        position: absolute;
+        top: -10px;
+        transform: translateY(-120%);
+        padding: 30px;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 2px 1px 0px 0px rgb(0 0 0 / 20%);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .skip-nav-link:focus {
+            transform: translateY(0%);
+    }
+
+    
+    .toggle
+    {
+        display: none;
+    }
+    
+    
+    .menu {
+        position: relative;
+        right: 0;
+        width: auto;
+        height: auto;
+
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu ul li {
+       border-right: 1px solid #0000002b;
+
+    }
+    
+        
+    .menu ul li:last-child,
+    .menu ul li.lastMenuOption {
+       border-right: 0px;
+    }
+    
+    
+    .menu ul li a{
+
+        min-width: 130px;
+        justify-content: center;
+
+    }
+    
+    .menu ul li.search {
+        display: none;
+
+    }
+    
+    
+        
+
+    
+    
+
+    main {
+            margin-top:13px;
+    }
+    .contentWrapper {
+
+    width: 80%;
+
+    
+    }
+    
+    header.navScrolled + main .contentWrapper {
+
+
+        margin-top: 15px;
+    
+    }   
+    
+
+    .showcase {
+        margin-bottom: -120px;
+    }
+    
+    .showcase.navfloat {
+        margin-bottom: -15px;
+    }
+    
+    
+    .parallaxLayer {
+    height: 100vh;
+    background-position: bottom center;
+    background-size: auto 1080px;
+    background-repeat: repeat-x;
+    width: 100%;
+    /* position: absolute;  */
+    position: fixed;
+    
+    }
+
+
+    #layer0 {
+        background-image: url(/img/art/parallax/test.jpeg);
+    }
+    /*
+    
+    #layer1 {
+        background-image: url(/img/art/parallax/parallax1.png)
+    }
+
+
+    #layer2 {
+        background-image: url(/img/art/parallax/parallax2.png)
+    }
+    
+    #layer3 {
+        background-image: url(/img/art/parallax/parallax3.png)
+    }
+
+
+    #layer4 {
+        background-image: url(/img/art/parallax/parallax4.png)
+    }
+    
+    #layer5 {
+        background-image: url(/img/art/parallax/parallax5.png)
+    }
+
+
+    #layer6 {
+        background-image: url(/img/art/parallax/parallax6.png)
+    }
+    
+    #layer7 {
+        background-image: url(/img/art/parallax/parallax7.png)
+    }
+
+
+    #layer8 {
+        background-image: url(/img/art/parallax/parallax8.png)
+    }
+
+    */
+    
+    
+    #products {
+            border-radius:  var(--bradius);
+    }
+    
+
+    .item h2 {
+
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .holder {
+        flex-direction: row-reverse;
+
+    }
+    
+    .right {    padding-right:1.5em;}
+    
+    .item .left blockquote {
+
+
+        margin-bottom:1px;
+
+}
+
+

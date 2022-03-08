@@ -1,5 +1,5 @@
 :root {
-    
+    --bradius: 3px;
     
     
     
@@ -155,10 +155,10 @@ body.active .menu {
     font-family: 'MuseoModerno', cursive;
     text-transform: lowercase;
     font-size: 1.3em;
-    padding: 0.5em;
+        padding: 1em;
     font-weight: 300;
     width: 100%;
-    
+
 }
 
 
@@ -184,7 +184,7 @@ body.active .menu {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 10;
+    z-index: 1000;
     display: none;
     justify-content: center;
     align-items: center;
@@ -212,28 +212,156 @@ body.active .lightsOff {
 
 }
 
-.fixed {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
+main {
     width: 100%;
-    background-image: url(/img/art/bg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    background-attachment: fixed;
-}
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
 
-.fixed img {
-    position: absolute;
-    height: 28.3em;
-    bottom: 0;
-
-
+    
 }
 
 .contentWrapper {
-  height: 3000px;
-width: 100%;
+
+    width: 100%;
+    height: 3000px;
+
     
+}
+
+
+#products {
+
+    width: 100%;
+    padding: 1.5em 1em;
+}
+
+
+.holder {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.item h2 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.item .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.item .left blockquote {
+
+
+    padding: 10px;
+    border-radius: var(--bradius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.item .left blockquote span {
+
+    margin-top:5px;
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.item .left blockquote span span {
+    opacity: 0.7;
+        font-style: italic;
+    margin-right: 5px;
+}
+
+
+.item .left p + p {
+    padding-top: 0.8em;
+}
+
+.item .holder .holderButtons { 
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.right {
+    justify-content: center;
+    align-items: center;
+
+
+}
+    
+.button {
+  position: relative;
+  display: inline-flex;
+  width: 147.5px;
+  height: 55px;
+  margin: 5px 5px 0px 5px;
+  perspective: 1000px;
+}
+.button a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .2s;
+
+  
+}
+.button a:before,
+.button a:after{
+  position: absolute;
+  content: attr(data-content);
+  height: 55px;
+  width: 147.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 5px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-radius: var(--bradius);
+}
+.button a:before{
+
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+    
+
+
+
+
+.item .holder img {
+    
+}
+
+.item .holder .right {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item img {
+    border-radius: var(--bradius);
 }
