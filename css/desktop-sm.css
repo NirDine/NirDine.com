@@ -108,7 +108,9 @@
         display: flex;
         flex-basis: 80%;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        border-radius: var(--bradius);
+        padding: 10px;
     }
 
     #products li {

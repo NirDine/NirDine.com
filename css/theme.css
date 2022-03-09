@@ -95,6 +95,11 @@ color: var(--accent);
     
 }
 
+#products .slick-dots {
+    background: var(--mainBG);
+
+}
+
 .item {
     background: var(--mainBG);
 }
