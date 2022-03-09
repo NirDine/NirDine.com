@@ -91,7 +91,7 @@ color: var(--accent);
 
 .contentWrapper {
 
-
+    background: var(--mainBG);
     
 }
 
@@ -99,9 +99,6 @@ color: var(--accent);
     background: var(--mainBG);
 }
 
-#products p {
-
-}
 
     .item .left blockquote {
 

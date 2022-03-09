@@ -29,6 +29,18 @@
     
     
 
+    main {
+            margin-top:12px;
+    }
+    
+
+    .showcase {
+        margin-bottom: -120px;
+    }
+    
+    .showcase.navfloat {
+        margin-bottom: -15px;
+    }
     
     
     /* HEADER */
@@ -56,7 +68,7 @@
     }
     
     header .logo {
-        width: 11em;
+        height: 4em;
         stroke: var(--contrast);
     }
 
@@ -121,147 +133,19 @@
 
     }
     
-    .menu ul li.search {
-        display: none;
-
-    }
     
     
-        
+        .contentWrapper {
 
-    
-    
+            background: transparent;
 
-    main {
-            margin-top:13px;
+        }
+
+
+        #products .slick-prev,
+    #products .slick-next {
+        color: var(--dark);
+        background-color: var(--mainBG);
     }
-    .contentWrapper {
-
-    width: 80%;
-
-    
-    }
-    
-
-    
-
-    .showcase {
-        margin-bottom: -120px;
-    }
-    
-    .showcase.navfloat {
-        margin-bottom: -15px;
-    }
-    
-    .parallaxLayer {
-
-    background-size: auto 100vh;
-
-        
-    }
-
-    /* 
-    
-    
-.parallaxLayer {
-    height: 100vh;
-    background-position: bottom center;
-    background-size: auto cover;
-    background-repeat: repeat-x;
-    width: 100%;
-    position: fixed;
-
-}
-
-    #layer0 {
-        background-image: url(/img/art/parallax/parallax0.png);
-    }
-
-    #layer1 {
-        background-image: url(/img/art/parallax/parallax1.png)
-    }
-
-
-    #layer2 {
-        background-image: url(/img/art/parallax/parallax2.png)
-    }
-    
-    #layer3 {
-        background-image: url(/img/art/parallax/parallax3.png)
-    }
-
-
-    #layer4 {
-        background-image: url(/img/art/parallax/parallax4.png)
-    }
-    
-    #layer5 {
-        background-image: url(/img/art/parallax/parallax5.png)
-    }
-
-
-    #layer6 {
-        background-image: url(/img/art/parallax/parallax6.png)
-    }
-    
-    #layer7 {
-        background-image: url(/img/art/parallax/parallax7.png)
-    }
-
-
-    #layer8 {
-        background-image: url(/img/art/parallax/parallax8.png)
-    }
-
-
-    #layer9 {
-        background-image: url(/img/art/parallax/parallax9.png)
-    }
-
-
-    #layer10 {
-        background-image: url(/img/art/parallax/parallax10.png)
-    }
-
-
-    #layer11 {
-        background-image: url(/img/art/parallax/parallax11.png)
-    }
-
-    
-    
-    */
-
-    
-    #products {
-            border-radius:  var(--bradius);
-    }
-    
-
-    .item h2 {
-
-        text-align: left;
-        font-size: 2em;
-    }
-
-    .holder {
-        flex-direction: row-reverse;
-
-    }
-    
-    .right {
-        padding-right:1.5em;
-    }
-    .right.reverse { 
-        padding-right:0em;
-        padding-left:1.5em;
-    }
-    
-    .item .left blockquote {
-
-
-        margin-bottom:1px;
-
-}
 
 

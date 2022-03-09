@@ -1,0 +1,177 @@
+@media (min-width: 768px ) {
+
+    
+
+    
+
+    
+    .parallaxLayer {
+
+    background-size: auto 100vh;
+
+        
+    }
+
+
+    
+.parallaxLayer {
+    height: 100vh;
+    background-position: bottom center;
+    background-size: auto cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: fixed;
+
+}
+
+    #layer0 {
+        background-image: url(/img/art/parallax/parallax0.png);
+    }
+
+    #layer1 {
+        background-image: url(/img/art/parallax/parallax1.png)
+    }
+
+
+    #layer2 {
+        background-image: url(/img/art/parallax/parallax2.png)
+    }
+    
+    #layer3 {
+        background-image: url(/img/art/parallax/parallax3.png)
+    }
+
+
+    #layer4 {
+        background-image: url(/img/art/parallax/parallax4.png)
+    }
+    
+    #layer5 {
+        background-image: url(/img/art/parallax/parallax5.png)
+    }
+
+
+    #layer6 {
+        background-image: url(/img/art/parallax/parallax6.png)
+    }
+    
+    #layer7 {
+        background-image: url(/img/art/parallax/parallax7.png)
+    }
+
+
+    #layer8 {
+        background-image: url(/img/art/parallax/parallax8.png)
+    }
+
+
+    #layer9 {
+        background-image: url(/img/art/parallax/parallax9.png)
+    }
+
+
+    #layer10 {
+        background-image: url(/img/art/parallax/parallax10.png)
+    }
+
+
+    #layer11 {
+        background-image: url(/img/art/parallax/parallax11.png)
+    }
+
+    
+    header {
+          padding: 20px 10% 20px 13%;
+    }
+
+    
+    #products {
+            border-radius:  var(--bradius);
+    }
+    
+    
+    .sliderButtons {
+    display: flex;
+    justify-content: center;
+
+    }
+
+    #products .slick-arrow {
+        flex-basis: 10%;
+    }
+
+    #products .slick-list {
+            flex-basis: 80%;
+    }
+
+    #products .slick-dots {
+        display: flex;
+        flex-basis: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #products li {
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        padding: 10px 20px;
+    }
+    
+    #products .slick-dots  img {
+       border-radius: var(--bradius);
+                filter: grayscale(100);
+    }
+
+    #products .slick-dots .slick-active img {
+        border-bottom: 5px solid var(--accent);
+        filter: grayscale(0);
+        transform: scale(110%);
+        transition: transform 0.05s ease-in, filter 0.07s ease-in;
+    }
+
+
+    #products .slick-prev,
+    #products .slick-next {
+        color: var(--dark);
+        background-color: var(--primary);
+        background-size: 30px 30px;
+        border-radius: 50%;
+        height:45px;
+        width: 45px;
+        border: 0px;
+    }
+
+    #products .slick-next  {
+
+    }
+
+
+    .item h2 {
+
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .holder {
+        flex-direction: row-reverse;
+
+    }
+    
+    .right {
+        padding-right:1.5em;
+    }
+    .right.reverse { 
+        padding-right:0em;
+        padding-left:1.5em;
+    }
+    
+    .item .left blockquote {
+
+
+        margin-bottom:1px;
+
+}
+    
+
+}
