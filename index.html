@@ -353,11 +353,7 @@
                 customPaging: function(slick,index) {
                     var targetImage = slick.$slides.eq(index).find('img').attr('src');
                     return '<img height="250px" class="imgPaging" src=" ' + targetImage + ' "/>';
-                },  
-                autoplay: true,
-                autoplaySpeed: 20000,
-                pauseOnDotsHover: true,
-                
+                },          
                 responsive: [
                     {
                         breakpoint: 768,
@@ -366,7 +362,11 @@
                             mobileFirst: true,
                             customPaging: function (slider) {
                                 return $('<button type="button" />');
-                            }
+                            },
+                            autoplay: true,
+                            autoplaySpeed: 8000,
+                            pauseOnDotsHover: true,
+                            
                         }
                     }
                    ]
