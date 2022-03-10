@@ -135,17 +135,25 @@
     
     
     
-        .contentWrapper {
+    .contentWrapper {
 
-            background: transparent;
+        background: transparent;
 
-        }
+    }
 
 
-        #products .slick-prev,
+    #products .slick-prev,
     #products .slick-next {
         color: var(--dark);
         background-color: var(--mainBG);
     }
+
+
+    #about {
+
+    display: flex;
+    width: 80%;
+
+}
 
 

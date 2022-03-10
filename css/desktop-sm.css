@@ -89,12 +89,23 @@
             border-radius:  var(--bradius);
     }
     
-    
-    .sliderButtons {
+
+        .sliderButtons {
     display: flex;
     justify-content: center;
+    position: relative;
+
+
 
     }
+
+.sliderButtons,
+.sliderButtons:first-child{
+        top: auto;
+    right: auto;
+}
+
+
 
     #products .slick-arrow {
         flex-basis: 10%;
@@ -104,6 +115,8 @@
             flex-basis: 80%;
     }
 
+
+    
     #products .slick-dots {
         display: flex;
         flex-basis: 80%;
@@ -121,8 +134,8 @@
     }
     
     #products .slick-dots  img {
-       border-radius: var(--bradius);
-                filter: grayscale(100);
+        border-radius: var(--bradius);
+        filter: grayscale(100);
     }
 
     #products .slick-dots .slick-active img {
@@ -133,26 +146,13 @@
     }
 
 
-    #products .slick-prev,
-    #products .slick-next {
-        color: var(--dark);
-        background-color: var(--primary);
-        background-size: 30px 30px;
-        border-radius: 50%;
-        height:45px;
-        width: 45px;
-        border: 0px;
-    }
-
-    #products .slick-next  {
-
-    }
-
 
     .item h2 {
-
-        text-align: left;
+        display: 
+        font-weight: 500;
         font-size: 2em;
+        margin-bottom: 0.2em;
+
     }
 
     .holder {
