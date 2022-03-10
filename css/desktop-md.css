@@ -148,7 +148,10 @@
         background-color: var(--mainBG);
     }
 
-
+    #products li {
+        padding: 10px 1.5em;
+    }
+    
     #about {
 
     display: flex;

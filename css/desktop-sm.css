@@ -109,6 +109,18 @@
 
     #products .slick-arrow {
         flex-basis: 10%;
+        
+    }
+
+        
+    #products .slick-arrow:first-child button:hover {
+        animation: poke-left 1.5s ease-in-out;
+        
+    }
+    
+    #products .slick-arrow button:hover {
+        animation: poke-right 1.5s ease-in-out;
+        
     }
 
     #products .slick-list {
@@ -119,7 +131,7 @@
     
     #products .slick-dots {
         display: flex;
-        flex-basis: 80%;
+        flex-basis: 100%;
         justify-content: center;
         flex-wrap: wrap;
         border-radius: var(--bradius);
@@ -130,7 +142,7 @@
         display: flex;
         justify-content: center;
         align-items:  center;
-        padding: 10px 20px;
+        padding: 10px 0.5em;
     }
     
     #products .slick-dots  img {
@@ -146,7 +158,11 @@
     }
 
 
-
+    .item {
+    padding: 1em 1.5em;
+    }
+    
+    
     .item h2 {
         display: 
         font-weight: 500;
@@ -173,7 +189,104 @@
 
         margin-bottom:1px;
 
-}
+    }
     
+    
+    
+    
+    
+/* common */
+.ribbon {
+    display: block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
 
+.ribbon span {
+
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: var(--accent);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: var(--mainBG);
+  font: 700 18px/1 '', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+    top: 0px;
+    transform: translateX(-24px);
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @keyframes poke-left {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            transform: translateX(-10%);
+        }
+        
+        50% {
+            transform: translateX(-5%);
+        }
+        75% {
+            transform: translateX(-10%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }  
+    
+    @keyframes poke-right {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            transform: translateX(10%);
+        }
+        
+        50% {
+            transform: translateX(5%);
+        }
+        75% {
+            transform: translateX(10%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }    
+    
+    
 }

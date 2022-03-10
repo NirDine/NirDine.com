@@ -296,21 +296,26 @@ position: absolute;
 
     }
 
+    #mobileDots {
+        width: 100%;
+    }
 
     #mobileDots .slick-dots {
-        margin-top: 0.5em;
+        margin-block: 0.5em;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+
     }
+
+
     #mobileDots .slick-dots li button {
         border-radius: 50%;
         width: 10px;
         height: 10px;
         border: 0px;
-        background: var(--contrast);
-
+        background: var(--mainBG);
         transform: scale(50%);
     }
     #mobileDots .slick-dots li.slick-active button {
@@ -499,6 +504,7 @@ position: absolute;
     height: 1000px;
 }
 
+.ribbon {display: none;}
 
 
     
