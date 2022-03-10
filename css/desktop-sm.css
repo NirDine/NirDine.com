@@ -164,7 +164,7 @@
     
     
     .item h2 {
-        display: 
+        display: block; 
         font-weight: 500;
         font-size: 2em;
         margin-bottom: 0.2em;
