@@ -47,7 +47,7 @@ header.navScrolled {
         background: var(--mainBG);
 }  
 
-header .logo
+header .logo 
 {  display: flex;
     align-content: center;
     fill:none;
@@ -226,6 +226,8 @@ body.active .lightsOff {
 }
 
 
+
+
 main {
     width: 100%;
     position: relative;
@@ -239,6 +241,10 @@ main {
 section + section {
     margin-top: 15px;
 }
+
+
+
+
 
 .contentWrapper {
 
@@ -399,19 +405,17 @@ position: absolute;
 
 .item .left blockquote span {
 
-    margin-top:5px;
-
 
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 
 }
 
 .item .left blockquote span span {
     opacity: 0.7;
-        font-style: italic;
-    margin-right: 5px;
+    font-style: italic;
+    margin-right:5px;
 }
 
 
@@ -493,7 +497,10 @@ position: absolute;
 }
 
 
-#about {
+#about,
+#contact,
+#progress 
+{
     
         background: var(--mainBG);
     
@@ -501,8 +508,91 @@ position: absolute;
     display: flex;
     width: 100%;
 
-    height: 1000px;
+    height: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+#progress {
+    width: 80%;
+
+    align-items: flex-end;
+}
+
+#progress .project {
+    display: flex;
+    width: 100%;
+}
+#progress .bar {
+    display: flex;
+    height: 2.5em;
+    width: 100%;
+    background: var(--primary);
+    border-bottom-left-radius: var(--bradius);
+    border-bottom-right-radius: var(--bradius);
+
+}
+
+#progress .inner-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent);
+    color: var(--mainBG);
+    height: 2.5em;
+
+
+}
+
+
+
+footer,
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background: url(/img/art/parallax/parallax9.png); 
+    background-position: 92% bottom;
+    background-repeat: no-repeat;
+    background-size: 110%;
+
+}
+
+footer div {
+    color: #9098CE;
+    width: 100%;
+    background-image: url(/img/art/parallax/parallax10.png); 
+
+}
+
+footer svg {
+
+    fill:none;
+    stroke:#9098CE;
+    stroke-miterlimit:10;
+    stroke-width:6px;
+    height: 2.5em;
+    margin-bottom: 0.2em;
+
+}
+
+footer span {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: verdana;
+}
+
 
 .ribbon {display: none;}
 
