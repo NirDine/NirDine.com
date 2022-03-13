@@ -1,0 +1,20 @@
+:root {
+
+--contrast: #2a2d42;
+--mainBG: #21252E; 
+--primary: #243650;
+--dark: #DFDFDF;
+}
+
+
+header .logo {
+    stroke: var(--dark);
+}
+
+.menu ul li a,
+.button a::before,
+.ribbon span
+{
+    color: var(--dark);
+
+}
