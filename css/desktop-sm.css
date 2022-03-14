@@ -94,20 +94,20 @@
     }
 
     @keyframes wind {
-        from {background-position:-750px 0;}
-        to {background-position:1250px 0;}
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
     }
     @-webkit-keyframes wind {
-        from {background-position:0 0;}
-        to {background-position:1250px 0;}
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
     }
     @-moz-keyframes wind {
-        from {background-position:0 0;}
-        to {background-position:1250px 0;}
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
     }
     @-ms-keyframes wind {
-        from {background-position: 0;}
-        to {background-position:1250px 0;}
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
     }
 
 
