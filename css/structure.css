@@ -594,17 +594,33 @@ display: flex;
     border-radius: var(--bradius);
 }
 
+
+
+#about .infoHolder {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#about .info .twitter {
+    transform: translateY(3em);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+#about .info h2 {
+    font-size: 2em;
+}
+
+
+
 #about .info span {
     opacity: 0.7;
 }
 
 #about .info span a {
    color: var(--dark)
-}
-
-
-#about .info h2 {
-    font-size: 2em;
 }
 
 #about .info p {
