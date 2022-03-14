@@ -1,5 +1,5 @@
 :root {
-    --bradius: 3px;
+    --bradius: 5px;
     
     
     
@@ -165,7 +165,6 @@ body.active .menu {
 {
     display: flex;
     justify-content: flex-end;
-    font-family: 'MuseoModerno', cursive;
     text-transform: lowercase;
     font-size: 1.3em;
         padding: 1em;
@@ -499,58 +498,238 @@ position: absolute;
 
 #about,
 #contact,
-#progress 
+#progress,
+#news
 {
     
         background: var(--mainBG);
-    
-    border-radius: var(--bradius);
+
     display: flex;
     width: 100%;
 
-    height: 500px;
 }
 
 
 
 
 
+#news {
+display: flex;
 
-
-
-
-
-
-#progress {
-    width: 80%;
-
-    align-items: flex-end;
 }
 
-#progress .project {
+#news .bar {
     display: flex;
+
     width: 100%;
-}
-#progress .bar {
-    display: flex;
-    height: 2.5em;
-    width: 100%;
-    background: var(--primary);
-    border-bottom-left-radius: var(--bradius);
-    border-bottom-right-radius: var(--bradius);
+    background: var(--dark);
+
 
 }
 
-#progress .inner-bar {
+#news .inner-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--accent);
     color: var(--mainBG);
-    height: 2.5em;
+    z-index: 2;
+    padding-block: 1em;
 
 
 }
+
+#news .bar::before {
+    content: 'Next project: ';
+    margin-right: 5px;
+    color: var(--mainBG);
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top:1em;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+
+
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+#about .who {
+    display: flex;
+    background: var(--primary);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about .avatar {
+    display: flex;
+    align-items: center;
+
+}
+
+#about .avatar img {
+    margin-top:40px;
+    
+}
+#about .info {
+    height: 300px;
+    background: var(--mainBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-block: 40px;
+    padding: 2em;
+    border-radius: var(--bradius);
+}
+
+#about .info span {
+    opacity: 0.7;
+}
+
+#about .info span a {
+   color: var(--dark)
+}
+
+
+#about .info h2 {
+    font-size: 2em;
+}
+
+#about .info p {
+    padding-block: 0.5em;
+}
+
+
+
+
+
+
+
+/* Styles for Accordion */ 
+
+.faq {
+    width: 100%;
+}
+
+.faqToggleTitle {
+
+padding: 25px 25px 14px;
+display: flex;
+border-top: 1px solid #00000010;
+margin-bottom: 6px;
+} 
+
+.faqToggleInner .faqToggleTitle {
+
+
+border-top: 0px !important;
+
+} 
+
+.faqToggleInner .faqToggleTitle i {
+
+background: transparent;
+
+} 
+
+.faq h3 {
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+margin: 0px;
+line-height: 1;
+cursor: pointer;
+font-weight:200;
+width: 100%;
+color: var(--dark);
+}
+
+
+.faq .active h3 {
+
+}
+
+.faqToggleInner {
+padding: 7px 25px 10px 25px;
+display: none;
+margin: -7px 0 6px;
+color: var(--contrast);
+
+
+}
+
+.faqToggleInner p + p {
+
+margin-top: 1em;
+
+}
+
+.faqToggleInner a {
+
+color: var(--accent);
+
+
+}
+
+
+.faqToggleTitle a i {
+font-size: 22px;
+margin-right: 5px;
+}
+
+.faqToggleTitle i {
+position: absolute;
+right: 0;
+background: url('/img/buttons/close-dark.svg') no-repeat;
+background-position: 0px 8px;
+width: 16px;
+height: 16px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+transition: all 0.3s ease;
+margin-inline: 20px;
+
+}
+
+.faqToggleTitle.active i {
+background-position: 0px 0px;
+    transform:rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

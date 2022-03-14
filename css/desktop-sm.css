@@ -143,12 +143,8 @@
     }
 
     
-    #products {
-            border-radius:  var(--bradius);
-    }
-    
 
-        .sliderButtons {
+    .sliderButtons {
     display: flex;
     justify-content: center;
     position: relative;
@@ -167,17 +163,20 @@
 
     #products .slick-arrow {
         flex-basis: 10%;
-        
-    }
 
         
+    }
+    
+
     #products .slick-arrow:first-child button:hover {
         animation: poke-left 1.5s ease-in-out;
+        color: var(--accent);
         
     }
     
     #products .slick-arrow button:hover {
         animation: poke-right 1.5s ease-in-out;
+        color: var(--accent);
         
     }
 
@@ -347,4 +346,34 @@
     }    
     
     
+}
+
+
+
+
+#about .who {
+    flex-direction: row;
+    background: var(--primary) url(/img/art/parallax/parallax8.png) 0px 0px no-repeat;
+    background-size: cover ;
+
+}
+
+#about .avatar {
+
+    margin-right:3em;
+
+}
+#about .avatar img {
+    margin-top:0px;
+    
+}
+
+#about .info {
+
+    flex-basis: 55%;
+
+}
+
+.faqToggleTitle i {
+position: inherit;
 }

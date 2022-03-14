@@ -13,8 +13,10 @@ header .logo {
 
 .menu ul li a,
 .button a::before,
-.ribbon span
+.ribbon span,
+.faqToggleInner
 {
     color: var(--dark);
 
 }
+

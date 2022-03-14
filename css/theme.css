@@ -13,7 +13,7 @@
 
 
 
-*
+*, .menu ul li a
 {
 
     font-family: 'MuseoModerno', cursive;
@@ -141,7 +141,7 @@ color: var(--accent);
 }
 
 
-.button:nth-child(2) a:after {
+.button:nth-child(2):hover a:after {
   color: var(--mainBG);
   background: var(--accent);
   border-color:var(--accent);
