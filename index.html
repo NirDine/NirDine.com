@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/structure.css">
         <link rel="stylesheet" href="css/theme.css">
+
         <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)">
         <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -97,7 +98,8 @@
                     <li><a href="#" onclick="escape()" style="--indexCount: 0;" id="navHome">Home</a></li>
                     <li><a href="#products" onclick="escape()" style="--indexCount: 1;" id="navProducts">Products</a></li>
                     <li><a href="#about" onclick="escape()" style="--indexCount: 2;" id="navAbout">About Me</a></li>
-                    <li class="lastMenuOption"><a class="" href="#contact" onclick="escape()" style="--indexCount: 3;" id="navContact">Contact</a></li>
+                    <li class=""><a class="" href="#news" onclick="escape()" style="--indexCount: 3;" id="navNews">News</a></li>
+                    <li class="lastMenuOption"><a class="" href="#contact" onclick="escape()" style="--indexCount: 4;" id="navContact">Contact</a></li>
                 </ul>
 
             </nav>                
@@ -364,7 +366,10 @@
                 customPaging: function(slick,index) {
                     var targetImage = slick.$slides.eq(index).find('img').attr('src');
                     return '<img height="250px" class="imgPaging" src=" ' + targetImage + ' "/>';
-                },          
+                },
+                autoplay: true,
+                autoplaySpeed: 12000,
+                pauseOnDotsHover: true,
                 responsive: [
                     {
                         breakpoint: 768,
@@ -374,9 +379,9 @@
                             customPaging: function (slider) {
                                 return $('<button type="button" />');
                             },
-                            autoplay: true,
+
                             autoplaySpeed: 8000,
-                            pauseOnDotsHover: true,
+
                             
                         }
                     }

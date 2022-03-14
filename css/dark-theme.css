@@ -8,7 +8,7 @@
 
 
 header .logo {
-    stroke: var(--dark);
+    stroke: var(--dark) !important;
 }
 
 .menu ul li a,

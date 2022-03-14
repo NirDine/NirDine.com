@@ -75,95 +75,67 @@
         background-image: url(/img/art/parallax/parallax11.png)
     }
 
-/* ============================================================================================== 
-SED Innovations
-https://sed.am
-https://mkrtchyan.ga
-================================================================================================= */
+
+    @keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-webkit-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-moz-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-ms-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+
+    @keyframes wind {
+        from {background-position:-750px 0;}
+        to {background-position:1250px 0;}
+    }
+    @-webkit-keyframes wind {
+        from {background-position:0 0;}
+        to {background-position:1250px 0;}
+    }
+    @-moz-keyframes wind {
+        from {background-position:0 0;}
+        to {background-position:1250px 0;}
+    }
+    @-ms-keyframes wind {
+        from {background-position: 0;}
+        to {background-position:1250px 0;}
+    }
+
+
+    .stars {
+      background:#2A3370 url(/img/art/stars.png);
+      background-size: 100%;
+    }
+
+    .twinkling{
+      background:transparent url(/img/art/twinkling.png) repeat top center;
+      -moz-animation:twink 200s linear infinite;
+      -ms-animation:twink 200s linear infinite;
+      -o-animation:twink 200s linear infinite;
+      -webkit-animation:twink 200s linear infinite;
+      animation:twink 200s linear infinite;
+    }
+
+    .clouds{
+      -moz-animation:wind 300s linear infinite;
+      -ms-animation:wind 300s linear infinite;
+      -o-animation:wind 300s linear infinite;
+      -webkit-animation:wind 300s linear infinite;
+      animation:wind 300s linear infinite;
+    }
 
 
 
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-5000px 2500px;}
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-5000px 2500px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-5000px 2500px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-5000px 2500px;}
-}
 
-@keyframes move-clouds-back {
-    from {background-position:-750 0;}
-    to {background-position:1250px 0;}
-}
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:1250px 0;}
-}
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:1250px 0;}
-}
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:1250px 0;}
-}
-
-
-.stars {
-  background:#2A3370 url(/img/art/stars.png) no-repeat top center;
-    background-size: 100%;
-  z-index:0;
-}
-
-.twinkling{
-  background:transparent url(/img/art/twinkling.png) repeat top center;
-
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}
-
-.clouds{
-  -moz-animation:move-clouds-back 300s linear infinite;
-  -ms-animation:move-clouds-back 300s linear infinite;
-  -o-animation:move-clouds-back 300s linear infinite;
-  -webkit-animation:move-clouds-back 300s linear infinite;
-  animation:move-clouds-back 300s linear infinite;
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     header {

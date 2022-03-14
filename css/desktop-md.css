@@ -30,18 +30,23 @@
     
 
     main {
-            margin-top:11px;
+        padding-top: 15px;
     }
     
 
     .showcase {
         margin-bottom: -119px;
+
     }
     
     .showcase.navfloat {
         margin-bottom: -15px;
     }
     
+    .showcase.navFloat .twinkling {
+    display: none;
+    
+    }
     
     /* HEADER */
     
