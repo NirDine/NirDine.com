@@ -35,7 +35,7 @@ header
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5px 0px 5px 4vw;
+  padding: 15px 4vw 5px 6vw;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -121,9 +121,9 @@ body.active header .logo {
     display: flex;
     position: fixed;
     top: 0;
-    right: -270px;
+    right: -250px;
     height: 100%;
-    width: 270;
+    width: 250;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
@@ -222,8 +222,10 @@ body.active .lightsOff {
     left: 0;
     height: 100vh;
     width: 100vw;
-
-
+    background-position: bottom center;
+    background-size:  auto 100% !important;
+    background-repeat: no-repeat;
+    background-image: url('/img/art/parallax/no-parallax.png');
 
 }
 
