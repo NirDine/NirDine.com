@@ -8,6 +8,6 @@ var layer, speed, yPos;
             var yPos = -(this.pageYOffset * speed / 100);
             layer.setAttribute('style', 'transform: translateY(' + yPos + 'px)');
         }
-    });
+    }, {passive: true});
 
 
