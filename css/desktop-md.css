@@ -206,6 +206,7 @@
     #navTheme,
     .navTheme {
     display: flex;
+    transition: transform 1s ease-in-out;
     }
     
     .navTheme{ padding-left: 1em;}
@@ -219,6 +220,7 @@
     .menu ul li #navTheme:hover,
     .menu ul li #navTheme:focus {
         background-color: var(--dark);
+            transform: rotate(360deg);
 
     }
     
@@ -226,16 +228,8 @@
     body.darkTheme .menu ul li #navTheme:focus {
         background-color: var(--accent);
 
-    }
-    
-    
-    
-    .navTheme {
-
 
     }
-    
-    
     
     #navTheme {
         background-image: url(/img/buttons/moon.svg);
@@ -243,12 +237,7 @@
         background-position: center;
         background-size: 30px;
         padding: 1.5em;
-
-        top: 0px;
-        background-color: var(--mainBG);
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
         min-width: auto;
     }
     
