@@ -293,7 +293,16 @@ body.darkTheme #news .bar {
 body.darkTheme #contact form input[type=submit] {
     filter: brightness(160%);
     color: var(--dark);
+
 }
+
+body.darkTheme #contact form input[type=submit]:hover,
+body.darkTheme #contact form input[type=submit]:focus
+{
+    filter: brightness(100%);
+
+}
+
 
 body.darkTheme .navScrolled .toggle {
      background-image: url(/img/buttons/menu.svg); 
