@@ -290,6 +290,14 @@ body.darkTheme #news .bar {
     background: var(--primary);
 }
 
+body.darkTheme #mobileDots .slick-dots li button {
+    background: var(--dark);
+}
+
+body.darkTheme #mobileDots .slick-dots li.slick-active button {
+    background: var(--accent);
+}
+
 body.darkTheme #contact form input[type=submit] {
     filter: brightness(160%);
     color: var(--dark);
