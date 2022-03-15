@@ -320,3 +320,27 @@ body.darkTheme .navScrolled .toggle {
 body.darkTheme .navScrolled .toggle.active {
      background-image: url(/img/buttons/close.svg); 
 }
+
+body.darkTheme .social.discord,
+body.darkTheme .social.patreon,
+body.darkTheme .social.twitter
+{
+    background: var(--mainBG);
+    
+    filter: brightness(150%);
+   
+}
+
+
+body.darkTheme .social.discord:hover,
+body.darkTheme .social.patreon:hover,
+body.darkTheme .social.twitter:hover,
+body.darkTheme .social.discord:focus,
+body.darkTheme .social.patreon:focus,
+body.darkTheme .social.twitter:focus
+{
+
+    
+    filter: brightness(180%);
+   
+}
