@@ -273,6 +273,10 @@ body.darkTheme header .logo {
     stroke: var(--dark) !important;
 }
 
+body.darkTheme header .logo:hover {
+    stroke: var(--accent) !important;
+}
+
 body.darkTheme .menu ul li a,
 body.darkTheme .button a::before,
 body.darkTheme .ribbon span,
