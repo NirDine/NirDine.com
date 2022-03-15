@@ -135,7 +135,10 @@
 
         min-width: 130px;
         justify-content: center;
-
+        border-top: 0px;
+        margin-bottom: 0px;
+        padding: 1em;
+        font-weight: 300;
     }
     
     
@@ -158,7 +161,7 @@
     }
     
     #about,
-    #contact,
+    #socialMedia,
     #progress {
 
         width: 80%; 
@@ -171,5 +174,30 @@
         border-top-right-radius:  var(--bradius);
         border-top-left-radius:  var(--bradius);
     }
+    
+    
+    #contact {
+    width: 80%;
+    padding: 0em;
 
+    }
+
+    
+    footer,
+    footer div {
+            height: 450px;
+    }
+    
+    
+    .contactContainer {
+            padding: 1em;
+            max-width: 175ch;
+    }
+    
+    
+    footer,
+    footer div {
+            height: 450px;
+    }
+    
 

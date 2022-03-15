@@ -155,7 +155,7 @@
 
 .sliderButtons,
 .sliderButtons:first-child{
-        top: auto;
+    top: auto;
     right: auto;
 }
 
@@ -376,4 +376,63 @@
 
 .faqToggleTitle i {
 position: inherit;
+}
+
+
+
+
+
+
+.aside {
+        grid-template-columns: 1fr;
+        
+}
+.social {
+    padding: 1em 6em;
+}
+
+    
+    .social:nth-child(1) {
+        border-top-right-radius:  var(--bradius);
+
+    }
+
+    .social:nth-child(3) {
+        border-bottom-right-radius:  var(--bradius);
+
+    }
+
+.social span {
+        display: block;
+        margin-top: 1em;
+}
+
+
+
+.social span {
+
+     opacity: 0.7;   
+    transition: all 0.2s;
+}
+
+
+.social:hover span {
+
+     opacity: 1;   
+
+}
+
+
+#contact {
+    display: grid;
+	border-radius: var(--bradius);
+    grid-template-areas:
+        "contact contact aside";
+    margin-bottom: 0px;
+}
+
+
+footer,
+footer div {
+        height: 250px;
 }
