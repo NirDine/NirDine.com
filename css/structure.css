@@ -852,17 +852,13 @@ footer div {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: var(--contrast) url(/img/art/parallax/parallax9.png);
-    background-position: 92% bottom;
-    background-repeat: no-repeat;
-    background-size: 110%;
+    background: var(--contrast);
     z-index: 1000;
 }
 
 footer div {
     color: #9098CE;
     width: 100%;
-    background-image: url(/img/art/parallax/parallax10.png); 
 
 }
 

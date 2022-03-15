@@ -432,7 +432,17 @@ position: inherit;
 }
 
 
+
 footer,
 footer div {
-        height: 250px;
+    background: var(--contrast) url(/img/art/parallax/parallax9.png);
+    background-position: 92% bottom;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 250px;
+}
+
+footer div {
+    background-image: url(/img/art/parallax/parallax10.png); 
+
 }
