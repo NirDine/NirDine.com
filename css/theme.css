@@ -291,7 +291,8 @@ body.darkTheme #news .bar {
 }
 
 body.darkTheme #contact form input[type=submit] {
-    background: var(--dark);
+    filter: brightness(160%);
+    color: var(--dark);
 }
 
 body.darkTheme .navScrolled .toggle {
