@@ -65,13 +65,24 @@
                 else {
 
                 }
-
+                
+                $(".fallback").css('visibility', 'visible');
             };
 
         </script>
 
     </head>
+    
+
+
+
+
     <body>
+        <div class="loaderContainer">
+              <div class="loader"></div>
+        </div>
+      
+       <div class="fallback" style="visibility: hidden;">
         <a href="#products" class="skip-nav-link" id="skip">Skip Navigation</a>
  
         <div class="lightsOff"></div>
@@ -508,7 +519,7 @@
                 </div>
 
             </footer>
-
+        </div>
         <!-- MENU HANDLER -->
         <script type="text/javascript">
             var isOpen = new Boolean(false);
@@ -604,9 +615,7 @@
             else{	jQuery(this).addClass("active").closest('.faqToggle').find('.faqToggleInner').slideDown(200);
             }
         });
-        </script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        
+        </script>        
 
     </body>
 </html>

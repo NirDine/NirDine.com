@@ -14,8 +14,17 @@ html {
     scroll-padding-top: 70px;
 }
 
-
 body {
+    overflow: hidden;
+    width: 100vw;
+
+    text-rendering: optimizeSpeed;
+
+}
+
+
+
+.fallback {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -23,9 +32,8 @@ body {
     justify-content: center;
     transition: 0.2s;
     overflow-x: hidden;
-    text-rendering: optimizeSpeed;
-    overflow: hidden;
 }
+
 
 
 header
@@ -838,4 +846,28 @@ footer span {
 }
 
 
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.loader {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-top: 16px solid var(--mainBG);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
     
