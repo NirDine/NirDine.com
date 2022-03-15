@@ -43,9 +43,6 @@ header
 
 }
 
-header.navScrolled {
-        background: var(--mainBG);
-}  
 
 header .logo 
 {  display: flex;
@@ -59,20 +56,6 @@ header .logo
 
 }
 
-header.navScrolled .logo
-{  
-    stroke:var(--contrast);
-
-
-
-}
-
-header .logo:hover,
-header .logo:focus
-{
-
-    stroke: var(--accent);
-}
 
 
 
@@ -115,6 +98,9 @@ body.active header .logo {
 .navScrolled .toggle.active {
     background-image: url(/img/buttons/close-contrast.svg);
 }
+
+
+
 
 
 .menu {
@@ -176,6 +162,20 @@ body.active .menu {
 
 }
 
+
+#navMobileTheme,
+#navTheme {
+    cursor: pointer;
+}
+#navTheme,
+.navTheme {
+    display: none;
+}
+
+
+#navMobileTheme {
+    display: flex;
+}
 
 .menu ul li a img {
     margin-top:5px;
@@ -293,9 +293,6 @@ position: absolute;
 
     #products .slick-prev,
     #products .slick-next {
-        color: var(--dark);
-        background-color: var(--primary);
-        background-size: 30px 30px;
         border-radius: 50%;
         height:45px;
         width: 45px;
@@ -326,11 +323,10 @@ position: absolute;
         width: 10px;
         height: 10px;
         border: 0px;
-        background: var(--mainBG);
         transform: scale(50%);
     }
     #mobileDots .slick-dots li.slick-active button {
-        background: var(--accent);
+
         transform: scale(150%);
 
     }
@@ -513,14 +509,14 @@ position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--mainBG);
+
 
 }
 
 
 #about .who {
     display: flex;
-    background: var(--primary);
+
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -539,7 +535,6 @@ position: absolute;
 }
 #about .info {
     height: 300px;
-    background: var(--mainBG);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -561,9 +556,6 @@ position: absolute;
     opacity: 0.7;
 }
 
-#about .info span a {
-   color: var(--dark)
-}
 
 #about .info p {
     padding-block: 0.5em;
@@ -580,7 +572,7 @@ position: absolute;
     display: flex;
 
     width: 100%;
-    background: var(--dark);
+
 
 
 }
@@ -589,9 +581,6 @@ position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--accent);
-    color: var(--mainBG);
-
     padding-block: 1.5em;
 
 
@@ -600,7 +589,6 @@ position: absolute;
 #news .bar::before {
     content: attr(data-progress);
     margin-right: 5px;
-    color: var(--mainBG);
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -644,7 +632,7 @@ line-height: 1;
 cursor: pointer;
 font-weight:200;
 width: 100%;
-color: var(--dark);
+
 }
 
 
@@ -656,7 +644,6 @@ color: var(--dark);
 padding: 7px 25px 10px 25px;
 display: none;
 margin: -7px 0 6px;
-color: var(--contrast);
 
 
 }
@@ -664,13 +651,6 @@ color: var(--contrast);
 .faqToggleInner p + p {
 
 margin-top: 1em;
-
-}
-
-.faqToggleInner a {
-
-color: var(--accent);
-
 
 }
 
@@ -713,7 +693,6 @@ background-position: 0px 0px;
 #contact {
     width: 100%;
 
-    background: var(--mainBG);
     margin-bottom: 20px;
 
 }
@@ -734,26 +713,21 @@ background-position: 0px 0px;
 
 #contact  h3 {
     font-size: 1.5em;
-    color: var(--dark);
-    font-weight: 200;
+
+    font-weight: 400;
     padding-inline: 0.1em;
 }
 
 #contact  p {
     
-    color: var(--contrast);
+
     margin-block: 0.3em;
 
     padding-inline: 0.2em;
 
 }
 
-#contact p a {
-    
-    color: var(--accent);
 
-
-}
 
 #contact form input,
 #contact form textarea {
@@ -761,7 +735,7 @@ background-position: 0px 0px;
     margin-block: 0.2em;
     border: 1px solid #00000010;
     border-radius: var(--bradius);
-    background: var(--mainBG);
+
 }
 
 #contact form input:focus, #contact form textarea:focus {
@@ -772,15 +746,13 @@ background-position: 0px 0px;
 
 
 #contact form input[type=submit] {
-    background: var(--contrast);
-    color: var(--mainBG);
+
     transition: all 0.2s;
     padding: 1.2em;
 }
 #contact form input[type=submit]:hover,
 #contact form input[type=submit]:focus {
-    color: var(--mainBG);
-    background:var(--accent);
+
     outline:none;
     
 }
@@ -813,21 +785,10 @@ background-position: 0px 0px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--mainBG);
+
 
 }
 
-.social.discord {
-    background: #5865F2;
-}
-
-.social.patreon {
-    background: #FF424D;
-}
-
-.social.twitter {
-    background: #1DA1F2;
-}
 
 .social img {
     display: block;
@@ -859,16 +820,10 @@ footer div {
     z-index: 1000;
 }
 
-footer div {
-    color: #9098CE;
-    width: 100%;
-
-}
 
 footer svg {
 
     fill:none;
-    stroke:#9098CE;
     stroke-miterlimit:10;
     stroke-width:6px;
     height: 2.5em;

@@ -10,6 +10,12 @@
 
 }
 
+::selection {
+    background: #00000096;
+    color: var(--mainBG);
+
+}
+
 
 
 
@@ -17,64 +23,14 @@
 {
 
     font-family: 'MuseoModerno', cursive;
+    font-weight: 300;
 }
 
 
-::selection {
-    background: #00000096;
-    color: var(--mainBG);
-
-}
-
-body, main {
-
-    background-color:var(--contrast);
-    color: var(--dark);
-
-
-
-}
 
 a {
     text-decoration: none;
-}
-
-.highlight {
-    color: var(--accent);
-}
-
-
-.skip-nav-link {
-    background: var(--mainBG);
-    color: var(--accent);
-    
-    
-}
-
-.menu {
-    background: var(--mainBG);
-}
-
-
-.menu ul li a
-{
-
-    color: var(--contrast);
-    
-    
-}
-
-
-
-
-.menu ul li:hover,
-.menu ul li:focus-within,
-.menu ul li:hover a,
-.menu ul li a:focus
-{
-
-color: var(--accent);
-
+    font-weight: 400;
 }
 
 
@@ -84,64 +40,265 @@ color: var(--accent);
 }
 
 
+header.navScrolled .logo
+{  
+    stroke:var(--contrast);
 
-.contentWrapper {
-
-    background: var(--mainBG);
-    
 }
 
+header .logo:hover,
+header .logo:focus
+{
 
-
-.item {
-    background: var(--mainBG);
-}
-
-
-    .item .left blockquote {
-
-    background: var(--primary);
-    
-    }
-
-    .item .left blockquote span {
-
-        color: var(--accent);
-}
-
-    
-    .item .left blockquote span.author {
-            color: var(--dark);
-}
-
-    
+    stroke: var(--accent);
 }
 
 
 .button a:before,
-.button a:after{
-
-}
-
-.button a:before {
-  color: var(--contrast);
-  background: var(--mainBG);
- border-color:var(--primary);
-}
-
 .button a:after {
-  color: var(--accent);
-  background: var(--mainBG);
-  border-color:var(--primary);
-    
+
+ border-color:var(--primary);
 }
 
 
 .button:nth-child(2):hover a:after {
-  color: var(--mainBG);
-  background: var(--accent);
+    
   border-color:var(--accent);
+
+}
+
+
+.social.discord {
+    background: #5865F2;
+}
+
+.social.patreon {
+    background: #FF424D;
+}
+
+.social.twitter {
+    background: #1DA1F2;
+}
+
+footer,
+footer div {
+
+    color: #9098CE;
+
+}
+footer svg {
+
+    stroke:#9098CE;
+
+}
+
+footer span {
+
+  font-family: Verdana,Geneva,sans-serif; 
+}
+
+
+
+
+/* BACKGROUNDS */
+
+.skip-nav-link,
+.menu,
+header.navScrolled,
+#mobileDots .slick-dots li button,
+.contentWrapper,
+.item,
+.button a:before,
+.button a:after,
+#about,
+#about .info,
+#contact,
+#contact form input,
+#contact form textarea,
+.social
+
+
+
+{
+
+    background: var(--mainBG);
+    
     
 }
 
 
+body,
+main,
+#contact form input[type=submit],
+footer,
+footer div 
+
+{
+
+    background-color:var(--contrast);
+
+}
+
+    
+#mobileDots .slick-dots li.slick-active button,
+.button:nth-child(2):hover a:after,
+#news .innerBar,
+#contact form input[type=submit]:hover,
+#contact form input[type=submit]:focus 
+
+{
+        
+    background: var(--accent);
+
+
+}
+
+
+#products .slick-prev,
+#products .slick-next,
+.item .left blockquote,
+#about .who
+
+{
+
+        background-color: var(--primary);
+
+}
+
+
+#news .bar
+
+
+{
+
+    background: var(--dark);
+
+
+}
+
+
+/*  COLORS  */
+    
+
+
+body, 
+main,
+#products .slick-prev,
+#products .slick-next,
+.item .left blockquote span.author,
+#about .info span a
+
+
+
+
+
+{
+    
+
+    color: var(--dark);
+
+}
+
+
+.skip-nav-link,
+.menu ul li:hover,
+.menu ul li:focus-within,
+.menu ul li:hover a,
+.menu ul li a:focus,
+.item .left blockquote span,
+.button a:after,
+.faqToggleInner a,
+#contact p a
+
+
+
+{
+color: var(--accent);
+    
+}
+
+
+
+
+.menu ul li a,
+.button a:before,
+.faqToggleInner
+
+
+
+
+{
+
+    color: var(--contrast);
+    
+    
+}
+
+
+
+.button:nth-child(2):hover a:after,
+#news .bar::before,
+#contact form input[type=submit],
+.social span
+
+
+{
+    
+    
+  color: var(--mainBG);
+    
+}
+
+
+
+
+
+
+
+/* Dark Theme */
+
+
+body.darkTheme {
+    
+    --contrast: #2a2d42;
+    --mainBG: #21252E; 
+    --primary: #243650;
+    --dark: #DFDFDF;
+}
+
+
+body.darkTheme header .logo {
+    stroke: var(--dark) !important;
+}
+
+body.darkTheme .menu ul li a,
+body.darkTheme .button a::before,
+body.darkTheme .ribbon span,
+body.darkTheme .faqToggleInner,
+body.darkTheme .social span,
+body.darkTheme #news .bar::before
+{
+    color: var(--dark);
+
+}
+
+
+
+body.darkTheme #contact form textarea,
+body.darkTheme #contact form input,
+body.darkTheme #news .bar {
+    background: var(--primary);
+}
+
+body.darkTheme #contact form input[type=submit] {
+    background: var(--dark);
+}
+
+body.darkTheme .navScrolled .toggle {
+     background-image: url(/img/buttons/menu.svg); 
+}
+
+
+body.darkTheme .navScrolled .toggle.active {
+     background-image: url(/img/buttons/close.svg); 
+}

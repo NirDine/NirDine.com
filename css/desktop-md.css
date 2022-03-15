@@ -200,4 +200,60 @@
             height: 450px;
     }
     
+    .menu ul {
+        margin-right: -3em;
+    }
+    #navTheme,
+    .navTheme {
+    display: flex;
+    }
+    
+    .menu ul li.navTheme:hover,
+    .menu ul li.navTheme:focus {
+        border-color: transparent;
 
+    }
+    
+    .menu ul li #navTheme:hover,
+    .menu ul li #navTheme:focus {
+        background-color: var(--dark);
+
+    }
+    
+    body.darkTheme .menu ul li #navTheme:hover,
+    body.darkTheme .menu ul li #navTheme:focus {
+        background-color: var(--accent);
+
+    }
+    
+    
+    
+    .navTheme {
+    padding-inline: 3em;
+    margin-right: -8.1em;
+    }
+    
+    
+    
+    #navTheme {
+        background-image: url(/img/buttons/moon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        padding: 1.5em;
+
+        top: 0px;
+        background-color: var(--mainBG);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        min-width: auto;
+    }
+    
+    body.darkTheme #navTheme {
+        background-image: url(/img/buttons/sun.svg);
+    }
+    #navMobileTheme,
+    .navMobileTheme {
+        display: none;
+    }
