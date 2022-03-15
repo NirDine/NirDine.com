@@ -36,6 +36,7 @@
 
     .showcase {
         margin-bottom: -119px;
+        background-image: none;
 
     }
     
@@ -201,13 +202,13 @@
             height: 450px;
     }
     
-    .menu ul {
-        margin-right: -3em;
-    }
+
     #navTheme,
     .navTheme {
     display: flex;
     }
+    
+    .navTheme{ padding-left: 1em;}
     
     .menu ul li.navTheme:hover,
     .menu ul li.navTheme:focus {
@@ -230,8 +231,8 @@
     
     
     .navTheme {
-    padding-inline: 3em;
-    margin-right: -8.1em;
+
+
     }
     
     
