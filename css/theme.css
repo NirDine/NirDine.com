@@ -333,14 +333,22 @@ body.darkTheme .social.twitter
 
 
 body.darkTheme .social.discord:hover,
-body.darkTheme .social.patreon:hover,
-body.darkTheme .social.twitter:hover,
-body.darkTheme .social.discord:focus,
-body.darkTheme .social.patreon:focus,
-body.darkTheme .social.twitter:focus
-{
-
-    
-    filter: brightness(180%);
-   
+body.darkTheme .social.discord:focus {
+        background: #5865F2;
+        filter: brightness(100%);
 }
+
+
+body.darkTheme .social.patreon:hover,
+body.darkTheme .social.patreon:focus {
+        background: #FF424D;
+        filter: brightness(100%);
+}
+
+body.darkTheme .social.twitter:hover,
+body.darkTheme .social.twitter:focus {
+        background: #1DA1F2;
+        filter: brightness(100%);    
+}
+
+
