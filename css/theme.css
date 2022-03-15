@@ -6,12 +6,12 @@
     --contrast: #676FA3;
     --mainBG: #EEF2FF;
     --dark: #333333;
-
+    --selection: #00000096;
 
 }
 
 ::selection {
-    background: #00000096;
+    background: var(--selection);
     color: var(--mainBG);
 
 }
@@ -264,6 +264,7 @@ body.darkTheme {
     --mainBG: #21252E; 
     --primary: #243650;
     --dark: #DFDFDF;
+    --selection: #ffffff96;
 }
 
 
@@ -350,5 +351,3 @@ body.darkTheme .social.twitter:focus {
         background: #1DA1F2;
         filter: brightness(100%);    
 }
-
-
