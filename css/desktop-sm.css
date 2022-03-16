@@ -160,6 +160,7 @@
 .sliderButtons:first-child{
     top: auto;
     right: auto;
+
 }
 
 
@@ -169,6 +170,13 @@
 
         
     }
+    #products .slick-arrow,
+    #products .slick-arrow button {
+
+        cursor: pointer;
+        
+    }
+
     
 
     #products .slick-arrow:first-child button:hover {
@@ -203,6 +211,7 @@
         justify-content: center;
         align-items:  center;
         padding: 10px 0.5em;
+        cursor: pointer;
     }
     
     #products .slick-dots  img {
@@ -217,7 +226,33 @@
         transition: transform 0.05s ease-in, filter 0.07s ease-in;
     }
 
+    #products .slick-autoplay-toggle-button {
 
+        top: 20px;
+        right: 20px;
+        background-color: var(--primary);
+        cursor: pointer;
+        padding: 0.25em 0.6em;
+    }
+    
+    #products .slick-autoplay-toggle-button:hover {
+
+        filter: brightness(105%);
+        
+    }
+
+    #products .slick-autoplay-toggle-button .slick-pause-icon,
+    #products .slick-autoplay-toggle-button .slick-play-icon {
+
+        width: 15px;
+        height: 25px;
+        background-size: 65%;
+
+    }
+
+
+    
+    
     .item {
     padding: 1em 1.5em;
     }

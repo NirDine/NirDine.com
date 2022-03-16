@@ -1,7 +1,7 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
         <title>NirDine — Weird Little Products</title>
 
         <!-- CSS -->
@@ -15,6 +15,9 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="slick/accessible-slick-theme.css">
+       
+       
        
         <!--  FAVICON   -->
         
@@ -143,21 +146,23 @@
         </section>
         
         <header>
-            <a href="/" class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.05 103.77"><defs></defs><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M212.44,340.61l1.16-78.49s-21.74-.79-30.3,3.4c-17,8.32-17.77,41.5-6.08,42.85,5.47.63,14.28.23,20.55,0,4.65-.18-25.35,2.91-25.35,32.24" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M318.39,268.21c-6.12-8.91-12,.3-7.89,4.89,8.15,9,20.48-3.52,12.49-11.27-4.24-4.11-15.55-9-19.49,1.22-10.84,28.19,26.7,74.5,25.46,73.07-.66-.77-8-9.81-29.12-36.81-10.11-12.93-32.49-43.24-30.76-40.61.93,1.4,12.7,15.78,15.45,25.81,5.12,18.6,6.41,53.2-17.91,64.75" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M105,330.13c8.76,6.33,11.23-4.33,5.79-7.25-10.7-5.76-18.11,10.18-8,14.8,5.37,2.45,12.8.45,12.8.45l1-.43c13.94-6.71,12.55-71.68,10.84-75.88-2.67-6.56,29.24,76.67,29.69,77.16,1.52,1.63-18.21-45.21,2.13-78.69a35.72,35.72,0,0,1,8.56-9.58" transform="translate(-94.99 -248.2)"/></g><g id="Layer_6" data-name="Layer 6"><path class="cls-1" d="M360.35,271.32C334,266.41,313.9,288.1,324.84,312.1c13.55,29.73,37.23,26.92,51,12.09" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M361.79,301.81c-4.62,3.19-11.63,8.75-26,5.64" transform="translate(-94.99 -248.2)"/></g><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M223.71,262.12l-1.23,75.59c33,0,44.14-2.2,44.14-37.8C266.62,276,260.37,262.12,223.71,262.12Z" transform="translate(-94.99 -248.2)"/></g><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M173.74,258.16s-18.1,13.9-13.5,50.21" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M160.92,311.6a62.82,62.82,0,0,0,3.36,12.59" transform="translate(-94.99 -248.2)"/></g><g id="Layer_12" data-name="Layer 12"><path class="cls-1" d="M263.07,341.08c1.05-.4,18.18-10.38,13.62-45.46" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M276.12,292.06A95.53,95.53,0,0,0,273,280.35" transform="translate(-94.99 -248.2)"/></g></svg>
+            <a href="/" class="logo" aria-label="Link to reload page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.05 103.77">
+                <title>NirDine's logo</title>
+                <defs></defs><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M212.44,340.61l1.16-78.49s-21.74-.79-30.3,3.4c-17,8.32-17.77,41.5-6.08,42.85,5.47.63,14.28.23,20.55,0,4.65-.18-25.35,2.91-25.35,32.24" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M318.39,268.21c-6.12-8.91-12,.3-7.89,4.89,8.15,9,20.48-3.52,12.49-11.27-4.24-4.11-15.55-9-19.49,1.22-10.84,28.19,26.7,74.5,25.46,73.07-.66-.77-8-9.81-29.12-36.81-10.11-12.93-32.49-43.24-30.76-40.61.93,1.4,12.7,15.78,15.45,25.81,5.12,18.6,6.41,53.2-17.91,64.75" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M105,330.13c8.76,6.33,11.23-4.33,5.79-7.25-10.7-5.76-18.11,10.18-8,14.8,5.37,2.45,12.8.45,12.8.45l1-.43c13.94-6.71,12.55-71.68,10.84-75.88-2.67-6.56,29.24,76.67,29.69,77.16,1.52,1.63-18.21-45.21,2.13-78.69a35.72,35.72,0,0,1,8.56-9.58" transform="translate(-94.99 -248.2)"/></g><g id="Layer_6" data-name="Layer 6"><path class="cls-1" d="M360.35,271.32C334,266.41,313.9,288.1,324.84,312.1c13.55,29.73,37.23,26.92,51,12.09" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M361.79,301.81c-4.62,3.19-11.63,8.75-26,5.64" transform="translate(-94.99 -248.2)"/></g><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M223.71,262.12l-1.23,75.59c33,0,44.14-2.2,44.14-37.8C266.62,276,260.37,262.12,223.71,262.12Z" transform="translate(-94.99 -248.2)"/></g><g id="Layer_10" data-name="Layer 10"><path class="cls-1" d="M173.74,258.16s-18.1,13.9-13.5,50.21" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M160.92,311.6a62.82,62.82,0,0,0,3.36,12.59" transform="translate(-94.99 -248.2)"/></g><g id="Layer_12" data-name="Layer 12"><path class="cls-1" d="M263.07,341.08c1.05-.4,18.18-10.38,13.62-45.46" transform="translate(-94.99 -248.2)"/><path class="cls-1" d="M276.12,292.06A95.53,95.53,0,0,0,273,280.35" transform="translate(-94.99 -248.2)"/></g></svg>
             </a>
             <div class="toggle"></div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#" onclick="escape()" style="--indexCount: 0;" id="navHome">Home</a></li>
-                    <li><a href="#products" onclick="escape()" style="--indexCount: 1;" id="navProducts">Products</a></li>
-                    <li><a href="#about" onclick="escape()" style="--indexCount: 2;" id="navAbout">About Me</a></li>
-                    <li class=""><a class="" href="#contact" onclick="escape()" style="--indexCount: 3;" id="navContact">Contact</a></li>
-                    <li class="lastMenuOption navTheme"><a  onclick="dark()" style="--indexCount: 4;" id="navTheme"> </a></li>
+                    <li><a href="#" onclick="escape()" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a></li>
+                    <li><a href="#products" onclick="escape()" style="--indexCount: 1;" id="navProducts" aria-label="Link to Products secttion">Products</a></li>
+                    <li><a href="#about" onclick="escape()" style="--indexCount: 2;" id="navAbout" aria-label="Link to About Me section">About Me</a></li>
+                    <li class=""><a class="" href="#contact" onclick="escape()" style="--indexCount: 3;" id="navContact" aria-label="Link to Contact section">Contact</a></li>
+                    <li class="lastMenuOption navTheme"><a  onclick="dark()" style="--indexCount: 4;" id="navTheme" aria-hidden> </a></li>
 
                 </ul>
                 <ul class="navMobileTheme">
-                    <li  onclick="dark()" class="lastMenuOption navMobileTheme"><a style="--indexCount: 4;" id="navMobileTheme">Toggle dark mode</a></li>
+                    <li  onclick="dark()" class="lastMenuOption navMobileTheme"><a style="--indexCount: 4;" id="navMobileTheme" aria-hidden>Toggle dark mode</a></li>
                 </ul>
             </nav>                
         </header>
@@ -200,7 +205,7 @@
                           
                           
                         <div class="right">
-                            <img src="img/products/doors.webp" height="388px" width="300px"/>
+                            <img src="img/products/doors.webp" height="388px" width="300px" alt="Front cover for The Incredible World of Doors and Locks"/>
                             <div class="holderButtons">
                                 <span class="button"><a href="https://www.dmsguild.com/product/297097/The-incredible-world-of-Doors--Locks" data-content="dmsguild"></a></span>
 
@@ -234,7 +239,7 @@
                           
                           
                         <div class="right">
-                            <img src="img/products/prophecies.webp" height="388px" width="300px"/>
+                            <img src="img/products/prophecies.webp" height="388px" width="300px" alt="Front cover for Prophecies as Narrative Tools"/>
                             <div class="holderButtons">
                                 <span class="button"><a href="https://www.dmsguild.com/product/320122/Prophecies-as-narrative-tools" data-content="dmsguild"></a></span>
                                 
@@ -275,7 +280,7 @@
                           
                           
                         <div class="right">
-                            <img src="img/products/ghastly.webp" height="388px" width="300px"/>
+                            <img src="img/products/ghastly.webp" height="388px" width="300px" alt="Front cover for A Ghastly Mess" />
                             <div class="holderButtons">
                                 <span class="button"><a href="https://www.dmsguild.com/product/333568/A-Ghastly-Mess" data-content="dmsguild"></a></span>
 
@@ -308,7 +313,7 @@
                           
                           
                         <div class="right">
-                            <img src="img/products/personality.webp" height="388px" width="300px"/>
+                            <img src="img/products/personality.webp" height="388px" width="300px" alt="Front cover for NirDine's Guide to Great Personality"/>
                             <div class="holderButtons">
                                 <span class="button"><a href="https://www.drivethrurpg.com/product/373458/NirDines-Guide-to-Great-Personality" data-content="drivethrurpg"></a></span>
                                 
@@ -334,7 +339,7 @@
             
             <section id="about">
                <div class="who">
-                    <div class="avatar"><img src="img/logo/avatar.png" height="300px"/></div>
+                    <div class="avatar"><img src="img/logo/avatar.png" height="300px" alt="NirDine's social media avatar"/></div>
                     <div class="info">
 
                             <h2 class="name">Martín Davico</h2>
@@ -408,18 +413,18 @@
                                     </h3>
                                 </div>
                                 <div class="faqToggleInner">
-                                    <p>¡Si! Mucho mejor de lo que hablo Inglés, de hecho.</p>
+                                    <p lang="es">¡Si! Mucho mejor de lo que hablo Inglés, de hecho.</p>
                                 </div>
                             </div><!-- END OF TOGGLE -->
                             <div class="faqToggle">
                                 <div class="faqToggleTitle active ">
                                     <h3>
-                                    <span class="faqTitleName">Gil!</span>
+                                    <span class="faqTitleName" lang="es">Gil!</span>
                                     <i></i>
                                     </h3>
                                 </div>
                                 <div class="faqToggleInner">
-                                    <p>Que bardeas?</p>
+                                    <p lang="es">Que bardeas?</p>
                                 </div>
                             </div><!-- END OF TOGGLE -->
                         </div>
@@ -480,30 +485,30 @@
                     <p>If you're looking to contact me about work, this form right here is the place to do it. Sometimes, thought, forms can be a little to... well, little. So, if you'd prefer it that way, you can also send an email at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a></p>
                     <p>If you're just looking to perform the out hanging (get it?), then the <a href="https://discord.nirdine.com">Discord Server (discord.nirdine.com)</a>  is what you're looking for. </p>
                     <form action="https://formspree.io/f/mlezljwd" method="post">
-                        <input type="text" name="name" placeholder="Your name" required />
-                        <input type="email" name="_replyto" id="email" size="30" placeholder="email@example.com" required/>
-        <input type="text" name="_gotcha" id="gotcha" />
-                        <textarea id="message" name="message"
+                        <input aria-label="Name field" type="text" name="name" placeholder="Your name" required />
+                        <input aria-label="Email field" type="email" name="_replyto" id="email" size="30" placeholder="email@example.com" required/>
+        <input aria-hidden type="text" name="_gotcha" id="gotcha" />
+                        <textarea aria-label="Message field" id="message" name="message"
                         rows="10" cols="33" placeholder="Your lovely message" required></textarea>
 
-                        <input type="submit" value="Send!"/>
+                        <input aria-label="Submit form button" type="submit" value="Send!"/>
                     </form>
                 </div>
                 <div class="aside">
 
 
-                <a href="http://discord.nirdine.com" class="social discord">
-                    <img src="/img/socials/discord.svg" alt="" height="50px" />
+                <a href="http://discord.nirdine.com" class="social discord" aria-label="Link to join the Discord server">
+                    <img src="/img/socials/discord.svg" alt="Discord Logo" height="50px" />
                     <span>discord.NirDine.com</span>
                 </a>
 
-                <a href="https://patreon.com/nirdine" class="social patreon">
-                    <img src="/img/socials/patreon.svg" alt="" height="50px">
+                <a href="https://patreon.com/nirdine" class="social patreon" aria-label="Link to NirDine's Patreon">
+                    <img src="/img/socials/patreon.svg" alt="Patreon Logo" height="50px">
                     <span>patreon.com/NirDine</span>
                 </a>
 
-                <a href="https://twitter.com/nirdine" class="social twitter">
-                    <img src="/img/socials/twitter.svg" alt="" height="50px">
+                <a href="https://twitter.com/nirdine" class="social twitter" aria-label="Link to NirDine's Twitter profile">
+                    <img src="/img/socials/twitter.svg" alt="Twitter Logo" height="50px">
                     <span>twitter.com/NirDine</span>
                 </a>
                 </div>
@@ -579,7 +584,8 @@
                 nextArrow: "<div class='sliderButtons'><button type='button' class='slick-next'>►</button></div>",
                 customPaging: function(slick,index) {
                     var targetImage = slick.$slides.eq(index).find('img').attr('src');
-                    return '<img height="250px" class="imgPaging" src=" ' + targetImage + ' "/>';
+                    var targetImageAlt = slick.$slides.eq(index).find('img').attr('alt');
+                    return '<img height="250px" class="imgPaging" src=" ' + targetImage + ' " alt=" Slider selector, ' + targetImageAlt + ' " />';
                 },
                 autoplay: true,
                 autoplaySpeed: 12000,

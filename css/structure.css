@@ -313,10 +313,57 @@ position: absolute;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-right: 50px;
 
 
     }
+   
+    #products .slick-autoplay-toggle-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -27px;
+        right: 4%;
+        z-index: 100000;
+        background: var(--mainBG);
+        border-radius: 50%;
+        border: 0px;
+        cursor: pointer;
+    }
 
+    #products .slick-autoplay-toggle-button .slick-pause-icon,
+    #products .slick-autoplay-toggle-button .slick-play-icon {
+        background-image: url(/img/buttons/pause-dark.svg);
+        width: 10px;
+        height: 20px;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    
+    #products .slick-autoplay-toggle-button .slick-play-icon {
+        background-image: url(/img/buttons/play-dark.svg);
+        
+    }
+
+
+    body.DarkTheme #products .slick-autoplay-toggle-button .slick-pause-icon {
+        background-image: url(/img/buttons/pause.svg);
+
+    }
+
+    
+    body.darkTheme #products .slick-autoplay-toggle-button .slick-play-icon {
+        background-image: url(/img/buttons/play.svg);
+        
+    }
+
+    #products .slick-autoplay-toggle-button .slick-pause-text, 
+    #products .slick-autoplay-toggle-button .slick-play-text {
+        display: none;
+    }
 
     #mobileDots .slick-dots li button {
         border-radius: 50%;

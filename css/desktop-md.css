@@ -158,6 +158,14 @@
         background-color: var(--mainBG);
     }
 
+    
+    #products .slick-autoplay-toggle-button {
+
+        top: 10px;
+        right: 11%;
+
+    }
+    
     #products li {
         padding: 10px 1.5em;
     }
