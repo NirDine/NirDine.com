@@ -349,16 +349,7 @@ position: absolute;
     }
 
 
-    body.DarkTheme #products .slick-autoplay-toggle-button .slick-pause-icon {
-        background-image: url(/img/buttons/pause.svg);
 
-    }
-
-    
-    body.darkTheme #products .slick-autoplay-toggle-button .slick-play-icon {
-        background-image: url(/img/buttons/play.svg);
-        
-    }
 
     #products .slick-autoplay-toggle-button .slick-pause-text, 
     #products .slick-autoplay-toggle-button .slick-play-text {
@@ -710,7 +701,8 @@ margin-right: 5px;
 .faqToggleTitle i {
 position: absolute;
 right: 0;
-background: url('/img/buttons/close-contrast.svg') no-repeat;
+background-image: url(/img/buttons/close-contrast.svg);
+background-repeat: no-repeat;
 background-position: 0px 8px;
 width: 16px;
 height: 16px;
@@ -887,7 +879,7 @@ footer span {
 
 .fallback::before {
   content: "";
-    position: absolute;
+  position: absolute;
   border: 16px solid transparent;
   border-radius: 50%;
   border-top: 16px solid var(--mainBG);

@@ -327,15 +327,43 @@ body.darkTheme .navScrolled .toggle.active {
      background-image: url(/img/buttons/close.svg); 
 }
 
+body.darkTheme #navTheme {
+    background-image: url(/img/buttons/sun.svg);
+}
+
+body.darkTheme .menu ul li #navTheme:hover,
+body.darkTheme .menu ul li #navTheme:focus {
+    background-color: var(--accent);
+
+
+}
+body.DarkTheme #products .slick-autoplay-toggle-button .slick-pause-icon {
+    background-image: url(/img/buttons/pause.svg);
+
+}
+
+
+body.darkTheme #products .slick-autoplay-toggle-button .slick-play-icon {
+    background-image: url(/img/buttons/play.svg);
+
+}
+
+
+body.darkTheme .faqToggleTitle i {
+    background-image: url(/img/buttons/close.svg);
+}
+
 body.darkTheme .social.discord,
 body.darkTheme .social.patreon,
 body.darkTheme .social.twitter
 {
     background: var(--mainBG);
-    
     filter: brightness(150%);
+    border-bottom: 5px solid #181b22;
    
 }
+
+
 
 
 body.darkTheme .social.discord:hover,
@@ -355,4 +383,8 @@ body.darkTheme .social.twitter:hover,
 body.darkTheme .social.twitter:focus {
         background: #1DA1F2;
         filter: brightness(100%);    
+}
+
+body.fallBack.darkTheme::before {
+  border-top: 16px solid var(--dark);
 }

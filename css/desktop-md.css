@@ -232,12 +232,6 @@
 
     }
     
-    body.darkTheme .menu ul li #navTheme:hover,
-    body.darkTheme .menu ul li #navTheme:focus {
-        background-color: var(--accent);
-
-
-    }
     
     #navTheme {
         background-image: url(/img/buttons/moon.svg);
@@ -249,9 +243,7 @@
         min-width: auto;
     }
     
-    body.darkTheme #navTheme {
-        background-image: url(/img/buttons/sun.svg);
-    }
+
     #navMobileTheme,
     .navMobileTheme {
         display: none;
