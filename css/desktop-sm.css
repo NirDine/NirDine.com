@@ -51,31 +51,31 @@
 
 
     #layer6 {
-        background-image: url(/img/art/parallax/parallax6.png)
+        background-image: url(/img/art/parallax/parallax6.webp)
     }
     
     #layer7 {
-        background-image: url(/img/art/parallax/parallax7.png)
+        background-image: url(/img/art/parallax/parallax7.webp)
     }
 
 
     #layer8 {
-        background-image: url(/img/art/parallax/parallax8.png)
+        background-image: url(/img/art/parallax/parallax8.webp)
     }
 
 
     #layer9 {
-        background-image: url(/img/art/parallax/parallax9.png)
+        background-image: url(/img/art/parallax/parallax9.webp)
     }
 
 
     #layer10 {
-        background-image: url(/img/art/parallax/parallax10.png)
+        background-image: url(/img/art/parallax/parallax10.webp)
     }
 
 
     #layer11 {
-        background-image: url(/img/art/parallax/parallax11.png)
+        background-image: url(/img/art/parallax/parallax11.webp)
     }
 
 
@@ -115,12 +115,12 @@
 
 
     .stars {
-      background:#2A3370 url(/img/art/stars.png);
+      background:#2A3370 url(/img/art/stars.webp);
       background-size: 100%;
     }
 
     .twinkling{
-      background:transparent url(/img/art/twinkling.png) repeat top center;
+      background:transparent url(/img/art/twinkling.webp) repeat top center;
       -moz-animation:twink 200s linear infinite;
       -ms-animation:twink 200s linear infinite;
       -o-animation:twink 200s linear infinite;
@@ -391,7 +391,7 @@
 
 #about .who {
     flex-direction: row;
-    background: var(--primary) url(/img/art/parallax/parallax8.png) 0px 0px no-repeat;
+    background: var(--primary) url(/img/art/parallax/parallax8.webp) 0px 0px no-repeat;
     background-size: cover ;
 
 }
@@ -473,7 +473,7 @@ position: inherit;
 
 footer,
 footer div {
-    background: var(--contrast) url(/img/art/parallax/parallax9.png);
+    background: var(--contrast) url(/img/art/parallax/parallax9.webp);
     background-position: 92% bottom;
     background-repeat: no-repeat;
     background-size: 110%;
@@ -481,6 +481,6 @@ footer div {
 }
 
 footer div {
-    background-image: url(/img/art/parallax/parallax10.png); 
+    background-image: url(/img/art/parallax/parallax10.webp); 
 
 }
