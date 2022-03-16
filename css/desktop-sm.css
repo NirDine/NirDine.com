@@ -474,14 +474,20 @@ position: inherit;
 
 footer,
 footer div {
-    background: var(--contrast) url(/img/art/parallax/parallax9.webp);
+
     background-position: 92% bottom;
     background-repeat: no-repeat;
     background-size: 110%;
     height: 250px;
 }
 
+footer {
+    background-color: var(--contrast);
+    background-image: url(/img/art/parallax/parallax9.webp);
+}
+
 footer div {
+    background-color: transparent;
     background-image: url(/img/art/parallax/parallax10.webp); 
 
 }
