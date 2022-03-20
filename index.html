@@ -19,19 +19,25 @@
        
        
        
-        <!--  FAVICON   -->
+        <!--  MANIFEST   -->
         <meta name="application-name" content="NirDine">
         <meta name="msapplication-config" content="browserconfig.xml">
+        <link rel="manifest" href="site.webmanifest">
         <meta name="apple-mobile-web-app-title" content="NirDine">
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
         <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#676FA3">
         <meta name="msapplication-TileColor" content="#676FA3">
         <meta name="theme-color" content="#EEF2FF">
         
-        <script>navigator.serviceWorker.register();</script>
+        <script>
+            
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/js/service-worker.js');
+            }
+
+        </script>
      
         <!--   DARK THEME   -->
         
