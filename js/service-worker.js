@@ -1,16 +1,89 @@
+const cacheName = 'nirdine-v1';
+const appShellFiles = [
+    '/',
+    '/index.html',
+    '/css/reset.css',
+    '/css/structure.css',
+    '/css/theme.css',
+    '/css/desktop-sm.css',
+    '/css/desktop-md.css',
+    '/js/observers.js',
+    '/js/parallax.js',
+    '/slick/slick.ajax-loader.gif',
+    '/slick/slick.css',
+    '/slick/slick.min.js',
+    '/img/art/stars.webp',
+    '/img/art/twinkling.webp',
+    '/img/art/parallax/no-parallax.png',
+    '/img/art/parallax/parallax1.png',
+    '/img/art/parallax/parallax2.png',
+    '/img/art/parallax/parallax3.png',
+    '/img/art/parallax/parallax4.png',
+    '/img/art/parallax/parallax5.png',
+    '/img/art/parallax/parallax6.webp',
+    '/img/art/parallax/parallax7.webp',
+    '/img/art/parallax/parallax8.webp',
+    '/img/art/parallax/parallax9.webp',
+    '/img/art/parallax/parallax10.webp',
+    '/img/art/parallax/parallax10.webp',
+    '/img/art/buttons/close.svg',
+    '/img/art/buttons/close-dark.svg',
+    '/img/art/buttons/close-contrast.svg',
+    '/img/art/buttons/menu.svg',
+    '/img/art/buttons/menu-dark.svg',
+    '/img/art/buttons/menu-contrast.svg',
+    '/img/art/buttons/play.svg',
+    '/img/art/buttons/play-dark.svg',
+    '/img/art/buttons/pause.svg',
+    '/img/art/buttons/pause-dark.svg',
+    '/img/art/buttons/moon.svg',
+    '/img/art/buttons/sun.svg',
+    '/img/favicon/android-chrome-192x192.png',
+    '/img/favicon/android-chrome-512x512.png',
+    '/img/favicon/apple-touch-icon.png',
+    '/img/favicon/favicon.ico',
+    '/img/favicon/favicon-16x16.png',
+    '/img/favicon/favicon-32x32.png',
+    '/img/favicon/mstile-150x150.png',
+    '/img/favicon/safari-pinned-tab.svg',
+    '/img/logo/avatar.png',
+    '/img/products/doors.webp',
+    '/img/products/prophecies.webp',
+    '/img/products/personality.webp',
+    '/img/products/ghastly.webp',
+    '/img/socials/discord.svg',
+    '/img/socials/twitter.svg',
+    '/img/socials/patreon.svg'
+];
+
 self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open('parallax-store').then((cache) => cache.addAll([
-        'img/parallax/art/parallax1.png/',
-        'img/parallax/art/parallax2.png/',
-        'img/parallax/art/parallax3.png/',     'img/parallax/art/parallax4.png/',     'img/parallax/art/parallax5.png/',     'img/parallax/art/parallax6.webp/',     'img/parallax/art/parallax7.webp/',     'img/parallax/art/parallax8.webp/',     'img/parallax/art/parallax9.webp/',     'img/parallax/art/parallax10.webp/',     'img/parallax/art/parallax11.webp/'
-    ])),
-  );
+  console.log('[Service Worker] Install');
+  e.waitUntil((async () => {
+    const cache = await caches.open(cacheName);
+    console.log('[Service Worker] Caching all: app shell and content');
+    await cache.addAll(appShellFiles);
+  })());
 });
 
+
 self.addEventListener('fetch', (e) => {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then((response) => response || fetch(e.request)),
-  );
+  e.respondWith((async () => {
+    const r = await caches.match(e.request);
+    console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
+    if (r) { return r; }
+    const response = await fetch(e.request);
+    const cache = await caches.open(cacheName);
+    console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
+    cache.put(e.request, response.clone());
+    return response;
+  })());
+});
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(caches.keys().then((keyList) => {
+    return Promise.all(keyList.map((key) => {
+      if (key === cacheName) { return; }
+      return caches.delete(key);
+    }))
+  }));
 });
