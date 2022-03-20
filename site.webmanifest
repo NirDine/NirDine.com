@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "NirDine - Weird Little Products",
+    "short_name": "NirDine",
+    "description": "Web App that lists all supplemental material published by NirDine",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +14,8 @@
             "type": "image/png"
         }
     ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
     "theme_color": "#EEF2FF",
     "background_color": "#676FA3",
     "display": "standalone"
