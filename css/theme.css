@@ -290,10 +290,15 @@ body.darkTheme #news .bar::before
 
 
 body.darkTheme #contact form textarea,
-body.darkTheme #contact form input,
-body.darkTheme #news .bar {
+body.darkTheme #contact form input
+{
     background: var(--primary);
 }
+body.darkTheme #news .bar {
+    background: #262836;
+}
+
+
 
 body.darkTheme #mobileDots .slick-dots li button {
     background: var(--dark);

@@ -28,6 +28,7 @@
 
 }
 
+
     #layer1 {
         background-image: url(/img/art/parallax/parallax1.png)
     }
@@ -52,33 +53,36 @@
 
 
     #layer6 {
-        background-image: url(/img/art/parallax/parallax6.webp)
+        background-image: url(/img/art/parallax/parallax6.png)
     }
     
     #layer7 {
-        background-image: url(/img/art/parallax/parallax7.webp)
+        background-image: url(/img/art/parallax/parallax7.png)
     }
 
 
     #layer8 {
-        background-image: url(/img/art/parallax/parallax8.webp)
+        background-image: url(/img/art/parallax/parallax8.png)
     }
 
 
     #layer9 {
-        background-image: url(/img/art/parallax/parallax9.webp)
+        background-image: url(/img/art/parallax/parallax9.png)
     }
 
 
     #layer10 {
-        background-image: url(/img/art/parallax/parallax10.webp)
+        background-image: url(/img/art/parallax/parallax10.png)
     }
 
 
     #layer11 {
-        background-image: url(/img/art/parallax/parallax11.webp)
+        background-image: url(/img/art/parallax/parallax11.png)
     }
-
+    
+    .darkTheme #layer11 {
+        background-image: url(/img/art/parallax/parallax11_darkMode.png)
+    }
 
     @keyframes twink {
         from {background-position:0 0;}
@@ -392,7 +396,7 @@
 
 #about .who {
     flex-direction: row;
-    background: var(--primary) url(/img/art/parallax/parallax8.webp) 0px 0px no-repeat;
+    background: var(--primary) url(/img/art/parallax/parallax8.png) 0px 0px no-repeat;
     background-size: cover ;
 
 }
@@ -483,11 +487,11 @@ footer div {
 
 footer {
     background-color: var(--contrast);
-    background-image: url(/img/art/parallax/parallax9.webp);
+    background-image: url(/img/art/parallax/parallax9.png);
 }
 
 footer div {
     background-color: transparent;
-    background-image: url(/img/art/parallax/parallax10.webp); 
+    background-image: url(/img/art/parallax/parallax10.png); 
 
 }
