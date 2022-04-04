@@ -225,7 +225,7 @@ body.active .lightsOff {
     background-position: bottom center;
     background-size:  auto 90% !important;
     background-repeat: no-repeat;
-    background-image: url('/img/art/parallax/no-parallax.png');
+    background-image: url('/img/art/parallax/no-parallax.webp');
     background-color: #2a3370;
 
 }
