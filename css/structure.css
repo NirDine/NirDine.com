@@ -282,12 +282,12 @@ position: absolute;
 
 .sliderButtons{
         top: 194px;
-    right: 15px;
+        right: 15px;
 }
 
-.sliderButtons:first-child{
-        top: 194px;
-    left: 15px;
+.sliderButtons:first-of-type{
+        right: auto;
+        left: 15px;
 }
 
 
