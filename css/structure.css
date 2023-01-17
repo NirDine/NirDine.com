@@ -231,6 +231,130 @@ body.active .lightsOff {
 }
 
 
+.parallaxLayer {
+    height: 100vh;
+    background-position: bottom center;
+    background-size: auto cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: fixed;
+
+}
+
+
+    #layer1 {
+        background-image: url(/img/art/parallax/parallax1.webp)
+    }
+
+
+    #layer2 {
+        background-image: url(/img/art/parallax/parallax2.webp)
+    }
+    
+    #layer3 {
+        background-image: url(/img/art/parallax/parallax3.webp)
+    }
+
+
+    #layer4 {
+        background-image: url(/img/art/parallax/parallax4.webp)
+    }
+    
+    #layer5 {
+        background-image: url(/img/art/parallax/parallax5.webp)
+    }
+
+
+    #layer6 {
+        background-image: url(/img/art/parallax/parallax6.webp)
+    }
+    
+    #layer7 {
+        background-image: url(/img/art/parallax/parallax7.webp)
+    }
+
+
+    #layer8 {
+        background-image: url(/img/art/parallax/parallax8.webp)
+    }
+
+
+    #layer9 {
+        background-image: url(/img/art/parallax/parallax9.webp)
+    }
+
+
+    #layer10 {
+        background-image: url(/img/art/parallax/parallax10.webp)
+    }
+
+
+    #layer11 {
+        background-image: url(/img/art/parallax/parallax11.webp)
+    }
+    
+    .darkTheme #layer11 {
+        background-image: url(/img/art/parallax/parallax11_darkMode.webp)
+    }
+
+    @keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-webkit-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-moz-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+    @-ms-keyframes twink {
+        from {background-position:0 0;}
+        to {background-position:-5000px 2500px;}
+    }
+
+    @keyframes wind {
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
+    }
+    @-webkit-keyframes wind {
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
+    }
+    @-moz-keyframes wind {
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
+    }
+    @-ms-keyframes wind {
+        from {background-position:50% 0;}
+        to {background-position:-200% 0;}
+    }
+
+
+    .stars {
+      background:#2A3370 url(/img/art/stars.webp);
+      background-size: 100%;
+    }
+
+    .twinkling{
+      background:transparent url(/img/art/twinkling.webp) repeat top center;
+      -moz-animation:twink 200s linear infinite;
+      -ms-animation:twink 200s linear infinite;
+      -o-animation:twink 200s linear infinite;
+      -webkit-animation:twink 200s linear infinite;
+      animation:twink 200s linear infinite;
+    }
+
+    .clouds{
+      -moz-animation:wind 300s linear infinite;
+      -ms-animation:wind 300s linear infinite;
+      -o-animation:wind 300s linear infinite;
+      -webkit-animation:wind 300s linear infinite;
+      animation:wind 300s linear infinite;
+    }
+
+
 
 
 main {
@@ -306,6 +430,8 @@ position: absolute;
 
     #mobileDots {
         width: 100%;
+        background: #676fa3;
+        z-index: 1;
     }
 
     #mobileDots .slick-dots {
