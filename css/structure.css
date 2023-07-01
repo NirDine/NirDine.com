@@ -139,12 +139,7 @@ body.active .menu {
 }
 
 
-.menu ul li:hover,
-.menu ul li:focus-within{
-    border-bottom: 5px solid  ;
-    padding-bottom: 0px;
 
-}
 
 
 .menu ul li a
