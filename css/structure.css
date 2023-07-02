@@ -46,11 +46,10 @@ header
 
 header .logo 
 {  display: flex;
+      stroke: var(--mainBG);
+      fill: var(--mainBG);
     align-content: center;
-    fill:none;
-    stroke:var(--mainBG);
     stroke-miterlimit:10;
-    stroke-width:6px;
     height: 2.5em;
 
 
@@ -213,15 +212,23 @@ body.active .lightsOff {
     position: relative;
     display: flex;
     justify-content: center;
+    align-content: center;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
     background-position: 49.3% 50%;
-    background-size:  auto 100% !important;
+    background-size:  100% auto !important;
     background-repeat: no-repeat;
-    background-image: url('/img/art/parallax/no-parallax.webp');
+    background-image: url('/img/art/portada1.JPG');
     background-color: #2a3370;
+}
+
+.showcase::after {
+    content: "";
+
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -565,10 +572,11 @@ position: absolute;
 
 #about .avatar img {
     margin-top:40px;
+    border-radius: 100%
     
 }
 #about .info {
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

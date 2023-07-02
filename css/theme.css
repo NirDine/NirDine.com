@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 
 :root {
-    --accent: #FF5959;
-    --primary: #CDDEFF;
-    --contrast: #676FA3;
-    --mainBG: #EEF2FF;
+    --accent: #c9689a;
+    --primary: #dfc9c9;
+    --contrast: #2f363b;
+    --mainBG: #fff0f0;
     --dark: #333333;
     --selection: #00000096;
 
@@ -47,7 +47,8 @@ a {
 
 header.navScrolled .logo
 {  
-    stroke:var(--contrast);
+      stroke: var(--contrast);
+      fill: var(--contrast);
 
 }
 
@@ -56,6 +57,7 @@ header .logo:focus
 {
 
     stroke: var(--accent);
+      fill: var(--accent);
 }
 
 
@@ -160,13 +162,20 @@ footer
 
 #products .slick-prev,
 #products .slick-next,
-.item .left blockquote,
-#about .who
+.item .left blockquote
 
 {
 
         background-color: var(--primary);
 
+}
+
+#about .who {
+    background-color: var(--primary);
+    background-image: url(/img/art/portada1.jpg);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
 }
 
 
@@ -179,6 +188,13 @@ footer
 
 
 }
+
+.showcase::after {
+    background: rgb(0,0,0);
+    background: -webkit-linear-gradient(270deg, transparent 0%, var(--contrast)  90%);
+
+}
+
 
 
 /*  COLORS  */
@@ -275,10 +291,12 @@ body.darkTheme {
 
 body.darkTheme header .logo {
     stroke: var(--dark) !important;
+    fill: var(--dark) !important;
 }
 
 body.darkTheme header .logo:hover {
     stroke: var(--accent) !important;
+    fill: var(--accent) !important;
 }
 
 body.darkTheme .menu ul li a,
