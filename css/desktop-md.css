@@ -26,6 +26,8 @@
     }
 
     
+    
+    
 
     main {
         padding-top: 15px;
@@ -34,6 +36,7 @@
 
     .showcase {
         margin-bottom: -119px;
+        background-image: none;
 
     }
     
@@ -71,8 +74,8 @@
     }
     
     header .logo {
-      stroke: var(--contrast);
-      fill: var(--contrast);
+        height: 4em;
+        stroke: var(--contrast);
     }
 
 
