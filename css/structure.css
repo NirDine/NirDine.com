@@ -44,17 +44,30 @@ header
 }
 
 
-header .logo 
+header .logo,
+footer .logo 
 {  display: flex;
     align-content: center;
-    fill:none;
-    stroke:var(--mainBG);
-    stroke-miterlimit:10;
-    stroke-width:6px;
     height: 2.5em;
+    width: 8em;
+    background-image: url('/img/logo/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer .logo {
+    background-image: url('/img/logo/logo-lighter.svg');
+    margin-bottom: 0.5em;
+}
+
+header .logo:hover
+{  
+    background-image: url('/img/logo/logo-color.svg');
 
 
 }
+
 
 
 

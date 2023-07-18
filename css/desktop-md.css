@@ -75,6 +75,7 @@
     
     header .logo {
         height: 4em;
+        width: 11em;
         stroke: var(--contrast);
     }
 
@@ -204,12 +205,7 @@
             max-width: 175ch;
     }
     
-    
-    footer,
-    footer div {
-            height: 450px;
-    }
-    
+
 
     #navTheme,
     .navTheme {
