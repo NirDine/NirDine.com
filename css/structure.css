@@ -226,6 +226,16 @@ body.active .lightsOff {
 }
 
 
+#layerLogo {
+    display: flex;
+    justify-content: center;
+
+}
+
+#layerLogo video {
+    height: 33vh;
+}
+
 
 main {
     width: 100%;

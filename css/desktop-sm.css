@@ -29,6 +29,16 @@
 
 }
 
+    #layerLogo {
+
+    margin-right: 2em;
+}
+
+    #layerLogo video {
+        margin-top: 0.8em;
+    }
+
+
 
     #layer1 {
         background-image: url(/img/art/parallax/parallax1.webp)

@@ -97,6 +97,13 @@
             
             
             </div>
+            
+             <div class="parallaxLayer parallax" id="layerLogo" data-speed="2">
+                 <video width="auto" height="" muted autoplay>
+                      <source src="/img/art/Comp%203_1.webm" type="video/webm">      
+                </video>
+            </div>
+            
             <div class="parallaxLayer parallax clouds" id="layer2" data-speed="5">
             
             
@@ -137,10 +144,12 @@
             
             <div class="parallaxLayer parallax" id="layer10" data-speed="80">
             </div>
-            
+        
             
             <div class="parallaxLayer parallax" id="layer11" data-speed="100">
             </div>
+            
+
             
             
         </section>
@@ -309,7 +318,7 @@
                         <div class="right">
                             <img src="img/products/personality.webp" height="388px" width="300px" alt="Front cover for NirDine's Guide to Great Personality"/>
                             <div class="holderButtons">
-                                <span class="button"><a href="https://www.dmsguild.com/product/428720/NirDines-Guide-to-Great-Personality" data-content="dmsguild" aria-label="Link to product listing on the Dungeon Masters Guild"></a></span>
+                                <span class="button"><a href="https://www.drivethrurpg.com/product/373458/NirDines-Guide-to-Great-Personality" data-content="drivethrurpg" aria-label="Link to product listing on the DrivethruRPG"></a></span>
                             </div>
                         </div>
                       </div>  
@@ -339,7 +348,7 @@
                             <div class="holderButtons">
                                 <span class="button" style="display: none;"><a href="" data-content="reddit" aria-label="Link to Reddit post"></a></span>
                                 
-                                <span class="button"><a href="https://www.patreon.com/posts/77339438" data-content="patreon" aria-label="Link to the supplement on Patreon"></a></span>
+                                <span class="button"><a href="#" data-content="drivethrurpg" aria-label="Link to the supplement on DrivethruRPG"></a></span>
                             </div>
                         </div>
                       </div>  
@@ -365,15 +374,15 @@
                             <h2 class="name">Martín Davico</h2>
                             <span><a href="https://twitter.com/nirdine">@NirDine</a></span>
                             <p class="pitch">
-                                Writer, Web Developer, Myr Enthusiast, and All-round All-rounder.
+                                QA Tester, Web Developer, Myr Enthusiast, and All-round All-rounder.
                             </p>
 
                     </div>
 
                 </div>
                 <section id="news">
-                    <div class="bar" data-progress="Next project: 21%">
-                    <div class="innerBar writing" style="width:21%;"></div>
+                    <div class="bar" data-progress="Next project: 64%">
+                    <div class="innerBar writing" style="width:64%;"></div>
                     </div>
                 </section>
                 <div class="faq">
@@ -406,7 +415,7 @@
                             </h3>
                         </div>
                         <div class="faqToggleInner">
-                            <p>The best way to support me is via <a href="https://patreon.com/NirDine">Patreon</a>. You get some cool stuff, I get to eat. If you're not big on subscriptions, buying my supplements is the next best thing.</p>
+                            <p>The best way to support me is by buying my supplements. I used to have a <a href="https://patreon.com/NirDine">Patreon</a>, but that's not live at the moment.</p>
                         </div>
                     </div><!-- END OF TOGGLE -->  
 
@@ -471,6 +480,30 @@
                             <p>I both designed and developed this site! The art, however, was commissioned from <a href="https://www.instagram.com/kyo_smash/">Kyo Smash</a></p>
                         </div>
                     </div><!-- END OF TOGGLE -->
+                    
+                    <div class="faqToggle">
+                        <div class="faqToggleTitle ">
+                            <h3>
+                            <span class="faqTitleName">Who made the art for the front page?</span>
+                            <i></i>
+                            </h3>
+                        </div>
+                        <div class="faqToggleInner">
+                            <p>The art was commissioned from <a href="https://www.instagram.com/kyo_smash/">Kyo Smash</a>. She also worked on two of my products and made my avatar.</p>
+                        </div>
+                    </div><!-- END OF TOGGLE -->
+                    
+                    <div class="faqToggle">
+                        <div class="faqToggleTitle ">
+                            <h3>
+                            <span class="faqTitleName">Who animated your logo?</span>
+                            <i></i>
+                            </h3>
+                        </div>
+                        <div class="faqToggleInner">
+                            <p>I did! Surprisingly enough, I also know my way around Adobe After Effects.</p>
+                        </div>
+                    </div><!-- END OF TOGGLE -->
 
                     <div class="faqToggle">
                         <div class="faqToggleTitle">
@@ -480,7 +513,7 @@
                             </h3>
                         </div>
                         <div class="faqToggleInner">
-                            <p>Not really. I'm not consistent or prolific enough to make a living out of this.</p>
+                            <p>Nope. I'm not consistent or prolific enough to make a living out of this.</p>
 
 
                             <div class="faqToggle">
@@ -511,7 +544,20 @@
                             <p>I'm supposed to release frequent updates, but if I didn't—as we both know will happen—do feel free to call me out.</p>
                         </div>
                     </div><!-- END OF TOGGLE -->
-
+                    
+                    <div class="faqToggle">
+                        <div class="faqToggleTitle ">
+                            <h3>
+                            <span class="faqTitleName">Why is your Patreon no longer active?</span>
+                            <i></i>
+                            </h3>
+                        </div>
+                        <div class="faqToggleInner">
+                            <p>Between university and work, I haven't been able to produce anything lately, so it didn't feel right to have it active. People were being charged and I couldn't deliver any content. </p>
+                            <p>It'll probably come back once I have more time in my hands to dedicate to this.</p>
+                        </div>
+                    </div><!-- END OF TOGGLE -->
+                    
                 </div><!-- END OF FAQ -->
 
             </section>
@@ -627,7 +673,7 @@
                 customPaging: function(slick,index) {
                     var targetImage = slick.$slides.eq(index).find('img').attr('src');
                     var targetImageAlt = slick.$slides.eq(index).find('img').attr('alt');
-                    return '<img height="250px" class="imgPaging" src=" ' + targetImage + ' " alt=" Slider selector, ' + targetImageAlt + ' " />';
+                    return '<a href="#products"><img height="250px" class="imgPaging" src=" ' + targetImage + ' " alt=" Slider selector, ' + targetImageAlt + ' " /></a>';
                 },
                 autoplay: true,
                 autoplaySpeed: 12000,
