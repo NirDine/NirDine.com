@@ -31,7 +31,6 @@ body {
 header
 {
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -40,6 +39,7 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 2400px;
 
 }
 
@@ -257,7 +257,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
+}
+
+main section {
+    max-width: 2400px;
 }
 
 section + section {
@@ -442,7 +446,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    flex: 90%;
     
 }
 
@@ -458,6 +462,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 
 }
 
@@ -588,6 +593,7 @@ position: absolute;
 
 #about .avatar img {
     margin-top:40px;
+    border-radius: 100%;
     
 }
 #about .info {

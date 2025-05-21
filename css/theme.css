@@ -85,6 +85,19 @@ header .logo:focus
     background: #1DA1F2;
 }
 
+.social.ko-fi {
+    background: #72A5F2;
+}
+
+.social.blue-sky {
+    background: #FFFFFF;
+    color: var(--dark);
+}
+
+.social.blue-sky span {
+    color: var(--dark);
+}
+
 footer,
 footer div {
 
